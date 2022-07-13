@@ -1,0 +1,36 @@
+.contacts-media {
+    &__list {
+        margin: -4px;
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        flex: wrap;
+    }
+    &__item {
+        margin: 4px;
+        padding: 0;
+    }
+    &__link {
+        width: 32px;
+        height: 32px;
+        display: block;
+        font-size: 0;
+        line-height: 32px;
+        text-align: center;
+        transition: all .24s;
+        transition-property: color;
+        @extend .area-click;
+        &:hover {
+            @media (min-width: $lg-mf) {
+                color: $color-gray-3;
+            }
+        }
+    }
+    &__icon {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        object-fit: contain;
+        vertical-align: middle;
+    }
+}

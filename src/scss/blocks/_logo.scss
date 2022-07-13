@@ -1,0 +1,54 @@
+.logo {
+    display: inline-block;
+    font-size: 42px;
+    line-height: 1;
+    color: $color-white-1;
+    text-align: center;
+    user-select: none;
+    white-space: nowrap;
+    transition: all .24s;
+    transition-property: opacity;
+    &:hover {
+        text-decoration: none;
+        @media (min-width: $lg-mf) {
+            opacity: .6;
+        }
+    }
+    @media (max-width: $lg) {
+        font-size: 34px;
+    }
+    &--accent-dark {
+    }
+    &--accent-white {
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    &__title {
+        margin: 0 0 4px;
+        display: flex;
+        align-items: center;
+        font-weight: 800;
+        &-text {
+            margin-right: 8px;
+            display: block;
+        }
+        &-text-accent {
+            padding: 3px 11px 5px;
+            display: block;
+            border-radius: 6px;
+        }
+    }
+    &--accent-white &__title-text-accent {
+        background: $color-black-2;
+    }
+    &--accent-dark &__title-text-accent {
+        background: $color-white-1;
+        color: $color-black-2;
+    }
+    &__subtitle {
+        display: block;
+        font-weight: bold;
+        font-size: 33.3333333333%;
+    }
+}

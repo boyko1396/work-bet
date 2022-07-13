@@ -1,0 +1,118 @@
+.btn {
+    max-width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .24s;
+    transition-property: background, color, border-color;
+    &:hover {
+        text-decoration: none;
+    }
+    &--size-sm {
+        min-height: 40px;
+        padding: 10px 22px;
+        font-size: var(--fs-7);
+    }
+    &--size-md {
+        min-height: 46px;
+        padding: 11px 22px;
+        font-size: var(--fs-7);
+    }
+    &--size-lg {
+        min-height: 76px;
+        padding: 16px 62px;
+        font-size: var(--fs-5);
+        @media (max-width: $sm) {
+            min-height: 58px;
+            padding: 13px 39px;
+            font-size: 16px;
+        }
+    }
+    &--theme-dark {
+        background: $color-black-2;
+        font-weight: 600;
+        color: $color-white-1;
+        &:hover {
+            @media (min-width: $lg-mf) {
+                background: $color-black-1;
+            }
+        }
+    }
+    &--theme-white {
+        background: $color-white-1;
+        font-weight: 600;
+        color: $color-gray-1;
+        &:hover {
+            @media (min-width: $lg-mf) {
+                background: $color-gray-2;
+            }
+        }
+    }
+    &--theme-white-accent {
+        background: $color-white-1;
+        font-weight: 600;
+        color: $color-black-2;
+        &:hover {
+            @media (min-width: $lg-mf) {
+                background: $color-gray-2;
+            }
+        }
+    }
+    &--theme-gray {
+        background: $color-gray-3;
+        font-weight: normal;
+        color: $color-white-1;
+        &:hover {
+            @media (min-width: $lg-mf) {
+                background: $color-black-1;
+            }
+        }
+    }
+    &--theme-simple {
+        background: $color-white-1;
+        font-size: var(--fs-default);
+        color: $color-black-1;
+        border-color: currentColor;
+        &:hover {
+            @media (min-width: $lg-mf) {
+                background: $color-gray-2;
+            }
+        }
+    }
+    &__icon-wrapper {
+        width: 22px;
+        height: 22px;
+        flex: 0 0 22px;
+        position: relative;
+        &--ltr {
+            margin-right: 8px;
+        }
+        &--rtl {
+            margin-left: 8px;
+        }
+    }
+    &__icon {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .12s;
+        transition-property: visibility, opacity;
+        &--normal {
+        }
+        &--active {
+        }
+    }
+    &.is-active &__icon--normal,
+    &:not(.is-active) &__icon--active {
+        visibility: hidden;
+        opacity: 0;
+    }
+}

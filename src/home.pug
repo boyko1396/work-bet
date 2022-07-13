@@ -1,0 +1,212 @@
+include includes/head.pug
+
+body
+
+  #site
+    include includes/header.pug
+
+    .intro
+      .container.intro__container
+        p.intro__appeal Volutpat porttitor mauris, sagittis mauris dictum nec pharetra feugiat ac. Faucibus platea leo egestas nulla sem nunc. Nisi, arcu porta aliquet blandit orci. Eu vel sodales et enim.
+        .intro__body
+          button(type="button").intro__body-close
+            svg.icon
+              use(xlink:href="./images/sprite.svg#close")
+          .intro__body-content
+            h1.intro__body-content-title At vel malesuada sed proin. Eu faucibus purus ullamcorper nibh consequat neque in iaculis
+            a.md-none.btn.btn--size-lg.btn--theme-dark.intro__body-content-btn Подробнее
+          picture.intro__body-picture
+            source(srcset="./images/intro-hero-1.webp", type="image/webp")
+            source(srcset="./images/intro-hero-1@2x.webp 2x", type="image/webp")
+            img(src="./images/intro-hero-1.jpg", srcset="./images/intro-hero-1@2x.jpg 2x", alt="At vel malesuada sed proin. Eu faucibus purus ullamcorper nibh consequat neque in iaculis")
+          a.md-visible.btn.btn--size-lg.btn--theme-dark.intro__body-content-btn Подробнее
+
+    main(role="main").main
+      section.feed-section
+        .container.feed-section__container
+          .feed-section__header
+            a(href="#").btn.btn--size-sm.btn--theme-gray.feed-section__header-btn-profit Профит
+            .group-btn-text.feed-section__header-filter
+              .group-btn-text__inner
+                .group-btn-text__item
+                  p.md-none.group-btn-text__item-title Количество на одной странице
+                  p.md-visible.group-btn-text__item-title Кол-во на стр.
+                  select(name="filter").js-select-init.group-btn-text__item-el
+                    option(value="10") 10
+                    option(value="20") 20
+                    option(value="30") 30
+          .feed-section__list
+            article.event-card.feed-section__list-card
+              table.event-card__table
+                thead
+                  tr.event-card__table-tr
+                    th.event-card__cell.event-card__cell--1
+                      p.event-card__title 66.27%
+                    th.event-card__cell.event-card__cell--2
+                      .event-card__title-wrapper
+                        p.event-card__title Дартс
+                        p.color-gray.event-card__description Начало в 19:25
+                        p.color-gray.event-card__description 02.07.22
+                    th.event-card__cell.event-card__cell--3
+                      .event-card__title-wrapper
+                        p.event-card__title Ставка
+                        p.color-gray.event-card__game-info (Game/Points)
+                    th(colspan="4").event-card__cell.event-card__cell--4
+                      p.event-card__title Коэф.
+                tbody
+                  tr.event-card__table-tr
+                    td.event-card__cell.event-card__cell--1
+                      .input-el.input-el--is-readonly.event-card__bo-name 1xbet
+                    td.event-card__cell.event-card__cell--2
+                      .input-el.input-el--is-readonly.event-card__name
+                        a(href="#").input-el__link Noppert D - Rodriguez R.-J
+                        button(type="button").js-event-copy-name.btn-copy.input-el__btn-copy
+                          svg.icon.btn-copy__icon
+                            use(xlink:href="./images/sprite.svg#copy")
+                      h3.color-gray.event-card__info Darts. Darts. European Tour. First round. 11 legs
+                    td.event-card__cell.event-card__cell--3
+                      .input-el.input-el--is-readonly.event-card__bo-bet 1
+                    td(colspan="4").event-card__cell.event-card__cell--4
+                      .input-profit.input-profit--plus.event-card__bo-profit
+                        input(type="text", name="", value="3.45").input-el.input-profit__el
+                  tr.event-card__table-tr
+                    td.event-card__cell.event-card__cell--1
+                      .input-el.input-el--is-readonly.event-card__bo-name Mostbet
+                    td.event-card__cell.event-card__cell--2
+                      .input-el.input-el--is-readonly.event-card__name
+                        a(href="#").input-el__link Danny Noppert - Rowby-John Rodriguez
+                        button(type="button").js-event-copy-name.btn-copy.input-el__btn-copy
+                          svg.icon.btn-copy__icon
+                            use(xlink:href="./images/sprite.svg#copy")
+                      h3.color-gray.event-card__info Darts. Darts. European Tour. Germany. Matches of 11 legs
+                    td.event-card__cell.event-card__cell--3
+                      .input-el.input-el--is-readonly.event-card__bo-bet X2
+                    td(colspan="4").event-card__cell.event-card__cell--4
+                      .input-profit.input-profit--minus.event-card__bo-profit
+                        input(type="text", name="", value="1.43").input-el.input-profit__el
+                  tr.event-card__table-tr
+                    td.cell-vertical-middle.event-card__cell.event-card__cell--1
+                      .event-card__time 1мин 22 сек
+                    td(colspan="2").cell-vertical-middle.event-card__cell.event-card__cell--2
+                      .event-card__btn-list
+                        a(href="#").btn.btn--size-md.btn--theme-simple.event-card__btn-list-item Открыть событие в БК
+                        a(href="#").btn.btn--size-md.btn--theme-simple.event-card__btn-list-item Сообщить об ошибке
+                        a(href="#").btn.btn--size-md.btn--theme-simple.event-card__btn-list-item Удалить
+                    td(colspan="4").cell-vertical-middle.event-card__cell.event-card__cell--4
+                      button(type="true").js-event-btn-calculator.btn.btn--size-md.btn--theme-simple.event-card__btn-calculator
+                        span.btn__icon-wrapper.btn__icon-wrapper--ltr
+                          svg.icon.btn__icon.btn__icon--normal
+                            use(xlink:href="./images/sprite.svg#calculator")
+                          svg.icon.btn__icon.btn__icon--active
+                            use(xlink:href="./images/sprite.svg#close")
+                        | Калькулятор
+                tfoot
+                  tr.event-card__table-tr
+                    td(colspan="7").event-card__cell.event-card__cell--2
+                      .event-card__bet-game
+                        img(src="./images/sprite/calculator.svg", alt="Рочдейл Роверс (23) vs Митчелтон (23) , 1 тайм 19:05").event-card__bet-game-icon
+                        | Рочдейл Роверс (23) vs Митчелтон (23) , 1 тайм 19:05
+                  tr.event-card__table-tr
+                    td.event-card__cell.event-card__cell--1
+                      p.event-card__title 66.27%
+                    td.event-card__cell.event-card__cell--2
+                      .event-card__title-wrapper
+                        p.event-card__title Дартс
+                        p.color-gray.event-card__description Начало в 19:25
+                        p.color-gray.event-card__description 02.07.22
+                    td.event-card__cell.event-card__cell--3
+                      .event-card__title-wrapper
+                        p.event-card__title Ставка
+                        p.color-gray.event-card__game-info (Game/Points)
+                    td.event-card__cell.event-card__cell--5
+                      p.event-card__title Коэф.
+                    td.event-card__cell.event-card__cell--5
+                      p.event-card__title Сумма
+                    td.event-card__cell.event-card__cell--6
+                      p.event-card__title Валюта
+                    td.event-card__cell.event-card__cell--5
+                      p.event-card__title Доход
+                  tr.event-card__table-tr
+                    td.event-card__cell.event-card__cell--1
+                      .input-el.input-el--is-readonly.event-card__bo-name 1xbet
+                    td.event-card__cell.event-card__cell--2
+                      .input-el.input-el--is-readonly.event-card__name
+                        a(href="#").input-el__link Noppert D - Rodriguez R.-J
+                        button(type="button").js-event-copy-name.btn-copy.input-el__btn-copy
+                          svg.icon.btn-copy__icon
+                            use(xlink:href="./images/sprite.svg#copy")
+                      h3.color-gray.event-card__info Darts. Darts. European Tour. First round. 11 legs
+                    td.event-card__cell.event-card__cell--3
+                      .input-el.input-el--is-readonly.event-card__bo-bet 1
+                    td.event-card__cell.event-card__cell--5
+                      input(type="text", name="", value="2.0").input-el.event-card__coefficient-input
+                    td.event-card__cell.event-card__cell--5
+                      input(type="text", name="", value="56.00").input-el.event-card__coefficient-input
+                    td.event-card__cell.event-card__cell--6
+                      select.js-select-light-init.event-card__currency
+                        option(value="USD") USD
+                        option(value="USD") USD
+                        option(value="USD") USD
+                    td.event-card__cell.event-card__cell--5
+                      input(type="text", name="", value="12.0").input-el.event-card__coefficient-input
+                  tr.event-card__table-tr
+                    td.event-card__cell.event-card__cell--1
+                      .input-el.input-el--is-readonly.event-card__bo-name Mostbet
+                    td.event-card__cell.event-card__cell--2
+                      .input-el.input-el--is-readonly.event-card__name
+                        a(href="#").input-el__link Danny Noppert - Rowby-John Rodriguez
+                        button(type="button").js-event-copy-name.btn-copy.input-el__btn-copy
+                          svg.icon.btn-copy__icon
+                            use(xlink:href="./images/sprite.svg#copy")
+                      h3.color-gray.event-card__info Darts. Darts. European Tour. Germany. Matches of 11 legs
+                    td.event-card__cell.event-card__cell--3
+                      .input-el.input-el--is-readonly.event-card__bo-bet 1
+                    td.event-card__cell.event-card__cell--5
+                      input(type="text", name="", value="2.55").input-el.event-card__coefficient-input
+                    td.event-card__cell.event-card__cell--5
+                      input(type="text", name="", value="44.00").input-el.event-card__coefficient-input
+                    td.event-card__cell.event-card__cell--6
+                      select.js-select-light-init.event-card__currency
+                        option(value="USD") USD
+                        option(value="USD") USD
+                        option(value="USD") USD
+                    td.event-card__cell.event-card__cell--5
+                      input(type="text", name="", value="12.24").input-el.event-card__coefficient-input
+                  tr.event-card__table-tr
+                    td.event-card__cell.event-card__cell--1
+                    td.event-card__cell.event-card__cell--2
+                    td.event-card__cell.event-card__cell--3
+                    td.event-card__cell.event-card__cell--5
+                    td.event-card__cell.event-card__cell--5
+                      input(type="text", name="", value="100").input-el.event-card__coefficient-input
+                    td.event-card__cell.event-card__cell--6
+                      select.js-select-light-init.event-card__currency
+                        option(value="USD") USD
+                        option(value="USD") USD
+                        option(value="USD") USD
+          .pagination.feed-section__pagination
+            ul.pagination__list
+              li.pagination__item
+                a(href="#").pagination__link.pagination__link--btn-prev.is-disabled
+                  svg.icon.pagination__icon
+                    use(xlink:href="./images/sprite.svg#arrow-left-pagination")
+              li.pagination__item
+                a(href="#").pagination__link.is-active 1
+              li.pagination__item
+                a(href="#").pagination__link 2
+              li.pagination__item
+                a(href="#").pagination__link 3
+              li.pagination__item
+                a(href="#").pagination__link 4
+              li.pagination__item
+                span.pagination__moore ...
+              li.pagination__item
+                a(href="#").pagination__link 10
+              li.pagination__item
+                a(href="#").pagination__link.pagination__link--btn-next
+                  svg.icon.pagination__icon
+                    use(xlink:href="./images/sprite.svg#arrow-left-pagination")
+
+    include includes/footer.pug
+
+include includes/foot.pug

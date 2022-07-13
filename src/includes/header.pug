@@ -1,0 +1,34 @@
+header.header
+  .container.header__container
+    a(href="/").logo.logo--accent-white.header__logo
+      span.logo__title
+        span.logo__title-text Work
+        span.logo__title-text-accent Bet
+      span.logo__subtitle ваш гарант доходов на спорте
+    .header__menu
+      button(type="button").js-menu-toggle.header__menu-btn-close
+        svg.icon
+          use(xlink:href="./images/sprite.svg#close")
+      nav(role="navigation").header-nav.header__nav
+        ul.header-nav__list
+          li.header-nav__item
+            a(href="#").header-nav__link Главная
+          li.header-nav__item
+            a(href="#").header-nav__link Вилки
+          li.header-nav__item
+            a(href="#").header-nav__link Особенности
+          li.header-nav__item
+            a(href="#").header-nav__link Тарифы
+          li.header-nav__item
+            a(href="#").header-nav__link Акции
+          li.header-nav__item
+            a(href="#").header-nav__link Поддержка
+      .btn-group.header__action
+        .btn-group__inner
+          a(href="#").btn.btn--size-md.btn--theme-dark.btn-group__item Вход
+          a(href="#").btn.btn--size-md.btn--theme-white.btn-group__item Регистрация
+      a(href="#").lg-visible.btn.btn--size-md.btn--theme-white-accent.header__action-write Написать нам
+    button(type="button").lg-visible.js-menu-toggle.header__toggle
+      span.header__toggle-line
+      span.header__toggle-line
+      span.header__toggle-line

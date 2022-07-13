@@ -1,0 +1,199 @@
+.wb-index {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+        width: 100%;
+        padding: 10px 0;
+        display: block;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+#site {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+svg,
+.icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    color: inherit;
+    fill: currentColor;
+}
+
+.container {
+    max-width: 1284px;
+    margin: 0 auto;
+    padding: 0 var(--gap);
+}
+
+.row {
+    margin: 0 calc(-1 * var(--gap));
+    display: flex;
+    flex-wrap: wrap;
+    &__col {
+        max-width: 100%;
+        min-height: 1px;
+        padding: 0 var(--gap);
+        flex: 1;
+        &--4 {
+            max-width: 33.333333333%;
+            flex-basis: 33.333333333%;
+        }
+        &--6 {
+            max-width: 50%;
+            flex-basis: 50%;
+        }
+    }
+}
+
+.img-cover {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+.text-overflow {
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    &--2 {
+        -webkit-line-clamp: 2;
+    }
+}
+
+.color-gray {
+    color: $color-gray-4;
+}
+
+.area-click {
+    --indent: -5px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: var(--indent);
+        right: var(--indent);
+        bottom: var(--indent);
+        left: var(--indent);
+    }
+}
+
+.btn-reset {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    outline: none;
+    border: none;
+    border-radius: 0;
+}
+
+.btn-copy {
+    width: 22px;
+    height: 22px;
+    display: block;
+    border-radius: 4px;
+    transition: all .24s;
+    transition-property: opacity;
+    cursor: pointer;
+    @extend .btn-reset, .area-click;
+    &:hover {
+        text-decoration: none;
+        @media (min-width: $lg-mf) {
+            opacity: .4;
+        }
+    }
+    &__icon {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.btn-group {
+    &__inner {
+        margin: -8px;
+        display: flex;
+    }
+    &__item {
+        margin: 8px;
+    }
+}
+
+.input-profit {
+    padding-right: 20px;
+    position: relative;
+    &:after {
+        background-position: 50%;
+        background-size: contain;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 28px;
+        margin-top: -14px;
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+    &--plus {
+        &:after {
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='28' viewBox='0 0 12 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M-7.86805e-07 10L6 -2.62268e-07L12 10L7.03923 10L7.03923 28L4.96077 28L4.96077 10L-7.86805e-07 10Z' fill='%235FBD00'/%3E%3C/svg%3E");
+        }
+    }
+    &--minus {
+        &:after {
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='28' viewBox='0 0 12 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 18L6 28L-8.51591e-07 18L4.96077 18L4.96077 -3.07695e-07L7.03923 -2.16842e-07L7.03923 18L12 18Z' fill='%23D20000'/%3E%3C/svg%3E");
+        }
+    }
+    &__el {
+    }
+}
+
+.group-btn-text {
+    &__inner {
+        margin: -8px;
+        display: flex;
+    }
+    &__item {
+        margin: 8px;
+        display: flex;
+        align-items: center;
+        &-title {
+            margin: 0 12px 0 0;
+            font-size: var(--fs-7);
+            color: $color-black-2;
+        }
+        &-el {
+            flex-shrink: 0;
+        }
+    }
+}
+
+td.cell-vertical-middle {
+    vertical-align: middle;
+}

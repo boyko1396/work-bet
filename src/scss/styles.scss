@@ -1,0 +1,23 @@
+@import "default/variables";
+@import "default/variables-css";
+@import "default/fonts";
+@import "default/interface";
+
+@import "blocks/components";
+@import "blocks/logo";
+@import "blocks/btn";
+@import "blocks/input";
+@import "blocks/select2.min";
+@import "blocks/select";
+@import "blocks/pagination";
+@import "blocks/event-card";
+@import "blocks/contacts-media";
+
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/main";
+@import "layouts/intro";
+@import "layouts/feed-section";
+
+
+@import "default/media";

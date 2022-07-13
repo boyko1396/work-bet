@@ -1,0 +1,164 @@
+.header-nav {
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        @media (min-width: $lg-mf) {
+            padding: 0 35px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    &__item {
+        margin: 0;
+        padding: 0;
+        & + & {
+            @media (max-width: $lg) {
+                margin-top: 18px;
+            }
+        }
+    }
+    &__link {
+        display: block;
+        font-weight: 600;
+        font-size: var(--fs-7);
+        transition: all .4s;
+        transition-property: color;
+        @extend .area-click;
+        @media (max-width: $lg) {
+            font-size: var(--fs-5);
+            text-align: center;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.header {
+    background: $color-gray-1;
+    padding: 10px 0;
+    color: $color-white-1;
+    position: relative;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        flex-shrink: 0;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        position: relative;
+        @media (max-width: $lg) {
+            background: $color-black-2;
+            width: 100%;
+            height: 100%;
+            padding: 35px 30px 55px;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: all .34s;
+            // transition-property: color;
+            overflow-x: hidden;
+            overflow-y: auto;
+            z-index: 1001;
+        }
+        &:not(.is-show) {
+            @media (max-width: $lg) {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        &-btn-close {
+            width: 32px;
+            height: 32px;
+            color: $color-white-1;
+            position: absolute;
+            top: 24px;
+            right: 20px;
+            cursor: pointer;
+            @extend .btn-reset;
+            @media (min-width: $lg-mf) {
+                display: none;
+            }
+            .icon {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+    }
+    &__nav {
+        @media (min-width: $lg-mf) {
+            flex-grow: 1;
+        }
+        @media (max-width: $lg) {
+            width: 100%;
+            margin: auto 0;
+            padding: 18px 0;
+        }
+    }
+    &__action {
+        flex-shrink: 0;
+        @media (min-width: $lg-mf) {
+            margin-left: auto;
+        }
+        @media (max-width: $lg) {
+            order: -1;
+        }
+        .btn-group__inner {
+            @media (max-width: $lg) {
+                min-width: 178px;
+                flex-direction: column;
+            }
+        }
+        .btn {
+            @media (max-width: $lg) {
+                background: $color-white-1;
+                font-weight: 600;
+                color: $color-black-2;
+            }
+        }
+    }
+    &__action-write {
+    }
+    &__toggle {
+        width: 44px;
+        height: 32px;
+        margin-left: auto;
+        display: block;
+        color: $color-white-1;
+        position: relative;
+        cursor: pointer;
+        @extend .btn-reset;
+        @media (min-width: $lg-mf) {
+        }
+        &-line {
+            background: currentColor;
+            height: 4px;
+            margin-top: -1px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            border-radius: 2px;
+            transform-origin: right center;
+            &:nth-child(1) {
+                width: 100%;
+                transform: translateY(-15px);
+            }
+            &:nth-child(2) {
+                width: 66.66%;
+            }
+            &:nth-child(3) {
+                width: 100%;
+                transform: translateY(15px);
+            }
+        }
+    }
+}

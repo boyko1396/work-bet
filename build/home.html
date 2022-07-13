@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>WorkBet</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+</html>
+<body>
+  <div id="site">
+    <header class="header">
+      <div class="container header__container"><a class="logo logo--accent-white header__logo" href="/"><span class="logo__title"><span class="logo__title-text">Work</span><span class="logo__title-text-accent">Bet</span></span><span class="logo__subtitle">ваш гарант доходов на спорте</span></a>
+        <div class="header__menu">
+          <button class="js-menu-toggle header__menu-btn-close" type="button">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <nav class="header-nav header__nav" role="navigation">
+            <ul class="header-nav__list">
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Главная</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Вилки</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Особенности</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Тарифы</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Акции</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Поддержка</a></li>
+            </ul>
+          </nav>
+          <div class="btn-group header__action">
+            <div class="btn-group__inner"><a class="btn btn--size-md btn--theme-dark btn-group__item" href="#">Вход</a><a class="btn btn--size-md btn--theme-white btn-group__item" href="#">Регистрация</a></div>
+          </div><a class="lg-visible btn btn--size-md btn--theme-white-accent header__action-write" href="#">Написать нам</a>
+        </div>
+        <button class="lg-visible js-menu-toggle header__toggle" type="button"><span class="header__toggle-line"></span><span class="header__toggle-line"></span><span class="header__toggle-line"></span></button>
+      </div>
+    </header>
+    <div class="intro">
+      <div class="container intro__container">
+        <p class="intro__appeal">Volutpat porttitor mauris, sagittis mauris dictum nec pharetra feugiat ac. Faucibus platea leo egestas nulla sem nunc. Nisi, arcu porta aliquet blandit orci. Eu vel sodales et enim.</p>
+        <div class="intro__body">
+          <button class="intro__body-close" type="button">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <div class="intro__body-content">
+            <h1 class="intro__body-content-title">At vel malesuada sed proin. Eu faucibus purus ullamcorper nibh consequat neque in iaculis</h1><a class="md-none btn btn--size-lg btn--theme-dark intro__body-content-btn">Подробнее</a>
+          </div>
+          <picture class="intro__body-picture">
+            <source srcset="./images/intro-hero-1.webp" type="image/webp"/>
+            <source srcset="./images/intro-hero-1@2x.webp 2x" type="image/webp"/><img src="./images/intro-hero-1.jpg" srcset="./images/intro-hero-1@2x.jpg 2x" alt="At vel malesuada sed proin. Eu faucibus purus ullamcorper nibh consequat neque in iaculis"/>
+          </picture><a class="md-visible btn btn--size-lg btn--theme-dark intro__body-content-btn">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <main class="main" role="main">
+      <section class="feed-section">
+        <div class="container feed-section__container">
+          <div class="feed-section__header"><a class="btn btn--size-sm btn--theme-gray feed-section__header-btn-profit" href="#">Профит</a>
+            <div class="group-btn-text feed-section__header-filter">
+              <div class="group-btn-text__inner">
+                <div class="group-btn-text__item">
+                  <p class="md-none group-btn-text__item-title">Количество на одной странице</p>
+                  <p class="md-visible group-btn-text__item-title">Кол-во на стр.</p>
+                  <select class="js-select-init group-btn-text__item-el" name="filter">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feed-section__list">
+            <article class="event-card feed-section__list-card">
+              <table class="event-card__table">
+                <thead>
+                  <tr class="event-card__table-tr">
+                    <th class="event-card__cell event-card__cell--1">
+                      <p class="event-card__title">66.27%</p>
+                    </th>
+                    <th class="event-card__cell event-card__cell--2">
+                      <div class="event-card__title-wrapper">
+                        <p class="event-card__title">Дартс</p>
+                        <p class="color-gray event-card__description">Начало в 19:25</p>
+                        <p class="color-gray event-card__description">02.07.22</p>
+                      </div>
+                    </th>
+                    <th class="event-card__cell event-card__cell--3">
+                      <div class="event-card__title-wrapper">
+                        <p class="event-card__title">Ставка</p>
+                        <p class="color-gray event-card__game-info">(Game/Points)</p>
+                      </div>
+                    </th>
+                    <th class="event-card__cell event-card__cell--4" colspan="4">
+                      <p class="event-card__title">Коэф.</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="event-card__table-tr">
+                    <td class="event-card__cell event-card__cell--1">
+                      <div class="input-el input-el--is-readonly event-card__bo-name">1xbet</div>
+                    </td>
+                    <td class="event-card__cell event-card__cell--2">
+                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Noppert D - Rodriguez R.-J</a>
+                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
+                          <svg class="icon btn-copy__icon">
+                            <use xlink:href="./images/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. First round. 11 legs</h3>
+                    </td>
+                    <td class="event-card__cell event-card__cell--3">
+                      <div class="input-el input-el--is-readonly event-card__bo-bet">1</div>
+                    </td>
+                    <td class="event-card__cell event-card__cell--4" colspan="4">
+                      <div class="input-profit input-profit--plus event-card__bo-profit">
+                        <input class="input-el input-profit__el" type="text" name="" value="3.45"/>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="event-card__table-tr">
+                    <td class="event-card__cell event-card__cell--1">
+                      <div class="input-el input-el--is-readonly event-card__bo-name">Mostbet</div>
+                    </td>
+                    <td class="event-card__cell event-card__cell--2">
+                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Danny Noppert - Rowby-John Rodriguez</a>
+                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
+                          <svg class="icon btn-copy__icon">
+                            <use xlink:href="./images/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. Germany. Matches of 11 legs</h3>
+                    </td>
+                    <td class="event-card__cell event-card__cell--3">
+                      <div class="input-el input-el--is-readonly event-card__bo-bet">X2</div>
+                    </td>
+                    <td class="event-card__cell event-card__cell--4" colspan="4">
+                      <div class="input-profit input-profit--minus event-card__bo-profit">
+                        <input class="input-el input-profit__el" type="text" name="" value="1.43"/>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="event-card__table-tr">
+                    <td class="cell-vertical-middle event-card__cell event-card__cell--1">
+                      <div class="event-card__time">1мин 22 сек</div>
+                    </td>
+                    <td class="cell-vertical-middle event-card__cell event-card__cell--2" colspan="2">
+                      <div class="event-card__btn-list"><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#">Открыть событие в БК</a><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#">Сообщить об ошибке</a><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#">Удалить</a></div>
+                    </td>
+                    <td class="cell-vertical-middle event-card__cell event-card__cell--4" colspan="4">
+                      <button class="js-event-btn-calculator btn btn--size-md btn--theme-simple event-card__btn-calculator" type="true"><span class="btn__icon-wrapper btn__icon-wrapper--ltr">
+                          <svg class="icon btn__icon btn__icon--normal">
+                            <use xlink:href="./images/sprite.svg#calculator"></use>
+                          </svg>
+                          <svg class="icon btn__icon btn__icon--active">
+                            <use xlink:href="./images/sprite.svg#close"></use>
+                          </svg></span>Калькулятор</button>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr class="event-card__table-tr">
+                    <td class="event-card__cell event-card__cell--2" colspan="7">
+                      <div class="event-card__bet-game"><img class="event-card__bet-game-icon" src="./images/sprite/calculator.svg" alt="Рочдейл Роверс (23) vs Митчелтон (23) , 1 тайм 19:05"/>Рочдейл Роверс (23) vs Митчелтон (23) , 1 тайм 19:05</div>
+                    </td>
+                  </tr>
+                  <tr class="event-card__table-tr">
+                    <td class="event-card__cell event-card__cell--1">
+                      <p class="event-card__title">66.27%</p>
+                    </td>
+                    <td class="event-card__cell event-card__cell--2">
+                      <div class="event-card__title-wrapper">
+                        <p class="event-card__title">Дартс</p>
+                        <p class="color-gray event-card__description">Начало в 19:25</p>
+                        <p class="color-gray event-card__description">02.07.22</p>
+                      </div>
+                    </td>
+                    <td class="event-card__cell event-card__cell--3">
+                      <div class="event-card__title-wrapper">
+                        <p class="event-card__title">Ставка</p>
+                        <p class="color-gray event-card__game-info">(Game/Points)</p>
+                      </div>
+                    </td>
+                    <td class="event-card__cell event-card__cell--5">
+                      <p class="event-card__title">Коэф.</p>
+                    </td>
+                    <td class="event-card__cell event-card__cell--5">
+                      <p class="event-card__title">Сумма</p>
+                    </td>
+                    <td class="event-card__cell event-card__cell--6">
+                      <p class="event-card__title">Валюта</p>
+                    </td>
+                    <td class="event-card__cell event-card__cell--5">
+                      <p class="event-card__title">Доход</p>
+                    </td>
+                  </tr>
+                  <tr class="event-card__table-tr">
+                    <td class="event-card__cell event-card__cell--1">
+                      <div class="input-el input-el--is-readonly event-card__bo-name">1xbet</div>
+                    </td>
+                    <td class="event-card__cell event-card__cell--2">
+                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Noppert D - Rodriguez R.-J</a>
+                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
+                          <svg class="icon btn-copy__icon">
+                            <use xlink:href="./images/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. First round. 11 legs</h3>
+                    </td>
+                    <td class="event-card__cell event-card__cell--3">
+                      <div class="input-el input-el--is-readonly event-card__bo-bet">1</div>
+                    </td>
+                    <td class="event-card__cell event-card__cell--5">
+                      <input class="input-el event-card__coefficient-input" type="text" name="" value="2.0"/>
+                    </td>
+                    <td class="event-card__cell event-card__cell--5">
+                      <input class="input-el event-card__coefficient-input" type="text" name="" value="56.00"/>
+                    </td>
+                    <td class="event-card__cell event-card__cell--6">
+                      <select class="js-select-light-init event-card__currency">
+                        <option value="USD">USD</option>
+                        <option value="USD">USD</option>
+                        <option value="USD">USD</option>
+                      </select>
+                    </td>
+                    <td class="event-card__cell event-card__cell--5">
+                      <input class="input-el event-card__coefficient-input" type="text" name="" value="12.0"/>
+                    </td>
+                  </tr>
+                  <tr class="event-card__table-tr">
+                    <td class="event-card__cell event-card__cell--1">
+                      <div class="input-el input-el--is-readonly event-card__bo-name">Mostbet</div>
+                    </td>
+                    <td class="event-card__cell event-card__cell--2">
+                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Danny Noppert - Rowby-John Rodriguez</a>
+                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
+                          <svg class="icon btn-copy__icon">
+                            <use xlink:href="./images/sprite.svg#copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. Germany. Matches of 11 legs</h3>
+                    </td>
+                    <td class="event-card__cell event-card__cell--3">
+                      <div class="input-el input-el--is-readonly event-card__bo-bet">1</div>
+                    </td>
+                    <td class="event-card__cell event-card__cell--5">
+                      <input class="input-el event-card__coefficient-input" type="text" name="" value="2.55"/>
+                    </td>
+                    <td class="event-card__cell event-card__cell--5">
+                      <input class="input-el event-card__coefficient-input" type="text" name="" value="44.00"/>
+                    </td>
+                    <td class="event-card__cell event-card__cell--6">
+                      <select class="js-select-light-init event-card__currency">
+                        <option value="USD">USD</option>
+                        <option value="USD">USD</option>
+                        <option value="USD">USD</option>
+                      </select>
+                    </td>
+                    <td class="event-card__cell event-card__cell--5">
+                      <input class="input-el event-card__coefficient-input" type="text" name="" value="12.24"/>
+                    </td>
+                  </tr>
+                  <tr class="event-card__table-tr">
+                    <td class="event-card__cell event-card__cell--1"></td>
+                    <td class="event-card__cell event-card__cell--2"></td>
+                    <td class="event-card__cell event-card__cell--3"></td>
+                    <td class="event-card__cell event-card__cell--5"></td>
+                    <td class="event-card__cell event-card__cell--5">
+                      <input class="input-el event-card__coefficient-input" type="text" name="" value="100"/>
+                    </td>
+                    <td class="event-card__cell event-card__cell--6">
+                      <select class="js-select-light-init event-card__currency">
+                        <option value="USD">USD</option>
+                        <option value="USD">USD</option>
+                        <option value="USD">USD</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </article>
+          </div>
+          <div class="pagination feed-section__pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item"><a class="pagination__link pagination__link--btn-prev is-disabled" href="#">
+                  <svg class="icon pagination__icon">
+                    <use xlink:href="./images/sprite.svg#arrow-left-pagination"></use>
+                  </svg></a></li>
+              <li class="pagination__item"><a class="pagination__link is-active" href="#">1</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+              <li class="pagination__item"><span class="pagination__moore">...</span></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">10</a></li>
+              <li class="pagination__item"><a class="pagination__link pagination__link--btn-next" href="#">
+                  <svg class="icon pagination__icon">
+                    <use xlink:href="./images/sprite.svg#arrow-left-pagination"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__inner">
+          <div class="footer__col footer__col--logo"><a class="logo logo--accent-dark footer__logo" href="/"><span class="logo__title"><span class="logo__title-text">Work</span><span class="logo__title-text-accent">Bet</span></span><span class="logo__subtitle">ваш гарант доходов на спорте</span></a></div>
+          <div class="footer__col footer__col--nav">
+            <div class="footer__nav-list">
+              <ul class="footer-nav footer__nav-list-item">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Главная</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Вилки</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Особенности</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Тарифы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Акции</a></li>
+              </ul>
+              <ul class="footer-nav footer__nav-list-item">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Информация</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">О нас</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Правила</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Платежи</a></li>
+              </ul>
+              <ul class="footer-nav footer__nav-list-item">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">С чего начать</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Начать выигрывать</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Как сделать ставку</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Как пополнить счет</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Как снять деньги</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Идентификация</a></li>
+              </ul>
+              <ul class="footer-nav footer__nav-list-item">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Поддержка</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Юридические запросы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Финансовые запросы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Налоговые запросы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col--contacts"><a class="btn btn--size-md btn--theme-white-accent footer__contacts-btn" href="#">Написать нам</a>
+            <div class="contacts-media footer__contacts-media">
+              <ul class="contacts-media__list">
+                <li class="contacts-media__item"><a class="contacts-media__link" href="#">
+                    <svg class="icon contacts-media__icon">
+                      <use xlink:href="./images/sprite.svg#signal-social"></use>
+                    </svg></a></li>
+                <li class="contacts-media__item"><a class="contacts-media__link" href="#">
+                    <svg class="icon contacts-media__icon">
+                      <use xlink:href="./images/sprite.svg#vk-social"></use>
+                    </svg></a></li>
+                <li class="contacts-media__item"><a class="contacts-media__link" href="#">
+                    <svg class="icon contacts-media__icon">
+                      <use xlink:href="./images/sprite.svg#telegram-social"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p><a href="#">Политика приватности Пользовательское&nbsp;соглашение</a><br>Workbet не является букмекером, не занимается организацией азартных игр и не пропагандирует их.<br>Информация несет ознакомительный характер.<br>Все права защищены. 18+</p>
+          <p>Wokrbet ©2022</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/select2.full.min.js"></script>
+<script src="js/main.js"></script>
