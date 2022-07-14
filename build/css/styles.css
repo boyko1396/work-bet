@@ -2223,11 +2223,11 @@ td.cell-vertical-middle {
     display: none !important;
   }
 }
-.feed-section-card:not(:last-child) {
+.feed-section__list-card:not(:last-child) {
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
-  .feed-section-card:not(:last-child) {
+  .feed-section__list-card:not(:last-child) {
     margin-bottom: 10px;
   }
 }
