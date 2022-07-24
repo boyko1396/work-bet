@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>WorkBet</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+</html>
+<body>
+  <div id="site">
+    <header class="header">
+      <div class="container header__container"><a class="logo logo--accent-white header__logo" href="/"><span class="logo__title"><span class="logo__title-text">Work</span><span class="logo__title-text-accent">Bet</span></span><span class="logo__subtitle">ваш гарант доходов на спорте</span></a>
+        <div class="header__menu">
+          <button class="js-menu-toggle header__menu-btn-close" type="button">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <nav class="header-nav header__nav" role="navigation">
+            <ul class="header-nav__list">
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Главная</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Вилки</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Особенности</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Тарифы</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Акции</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Поддержка</a></li>
+            </ul>
+          </nav>
+          <div class="btn-group header__action">
+            <div class="btn-group__inner"><a class="btn btn--size-md btn--theme-dark btn-group__item" href="#">Вход</a><a class="btn btn--size-md btn--theme-white btn-group__item" href="#">Регистрация</a></div>
+          </div><a class="lg-visible btn btn--size-md btn--theme-white-accent header__action-write" href="#">Написать нам</a>
+        </div>
+        <button class="lg-visible js-menu-toggle header__toggle" type="button"><span class="header__toggle-line"></span><span class="header__toggle-line"></span><span class="header__toggle-line"></span></button>
+      </div>
+    </header>
+    <main class="main" role="main">
+      <section class="tariffs-section">
+        <div class="container tariffs-section__container">
+          <h1 class="tariffs-section__title">Базовые тарифы</h1>
+          <div class="tariffs-slider tariffs-section__slider">
+            <div class="js-tariffs-slider-init tariffs-slider__inner">
+              <div class="tariffs-slider__slide">
+                <div class="tariffs-card tariffs-slider__card">
+                  <div class="tariffs-card__inner">
+                    <div class="tariffs-card__title">Free</div>
+                    <div class="tariffs-card__price-wrap">
+                      <div class="services-price tariffs-card__price">Бесплатно</div>
+                    </div>
+                    <div class="tariffs-card__prolongation">Продления нет</div>
+                    <ul class="list-benefits tariffs-card__list-benefits">
+                      <li>12 видов спорта</li>
+                      <li>49 сайтов и 134 клонов в Prematch</li>
+                    </ul>
+                    <div class="tariffs-card__footer">
+                      <p class="tariffs-card__description">*продление доступно только при наличии действующей подписки</p><a class="btn btn--size-st btn--theme-dark tariffs-card__btn" href="#">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tariffs-slider__slide">
+                <div class="tariffs-card tariffs-slider__card">
+                  <div class="tariffs-card__inner">
+                    <div class="tariffs-card__title">Прематч</div>
+                    <div class="tariffs-card__price-wrap">
+                      <div class="services-price tariffs-card__price">150 руб.</div>
+                    </div>
+                    <div class="tariffs-card__prolongation">Продление 200 руб.</div>
+                    <ul class="list-benefits tariffs-card__list-benefits">
+                      <li>12 видов спорта</li>
+                      <li>49 сайтов и 134 клонов в Prematch</li>
+                      <li>Профит от 1 до 10%</li>
+                    </ul>
+                    <div class="tariffs-card__footer">
+                      <p class="tariffs-card__description">*продление доступно только при наличии действующей подписки</p><a class="btn btn--size-st btn--theme-dark tariffs-card__btn" href="#">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tariffs-slider__slide">
+                <div class="tariffs-card tariffs-slider__card">
+                  <div class="tariffs-card__inner">
+                    <div class="tariffs-card__title">Прематч+LIVE</div>
+                    <div class="tariffs-card__price-wrap">
+                      <div class="services-price tariffs-card__price">150 руб.</div>
+                    </div>
+                    <div class="tariffs-card__prolongation">Продление 200 руб.</div>
+                    <ul class="list-benefits tariffs-card__list-benefits">
+                      <li>12 видов спорта</li>
+                      <li>49 сайтов и 134 клонов в Prematch</li>
+                      <li>Профит от 1 до 10%</li>
+                    </ul>
+                    <div class="tariffs-card__footer">
+                      <p class="tariffs-card__description">*продление доступно только при наличии действующей подписки</p><a class="btn btn--size-st btn--theme-dark tariffs-card__btn" href="#">Перейти</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tariffs-build-section">
+        <div class="container tariffs-build-section__container">
+          <h2 class="tariffs-build-section__title">Индивидуальный конструктор по тарифам "Private" и "Premium"</h2>
+          <div class="tariffs-build tariffs-build-section__block">
+            <div class="tariffs-build__list">
+              <div class="tariffs-build__card">
+                <div class="tariffs-build__card-title">Версия:</div>
+                <div class="tariffs-build__card-row">
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-white tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-version" value="Lite" checked="checked"/>
+                      <div class="checkbox-btn-label__inner">Lite</div>
+                    </label>
+                  </div>
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-white tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-version" value="Pro"/>
+                      <div class="checkbox-btn-label__inner">Pro</div>
+                    </label>
+                  </div>
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-white tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-version" value="Premium"/>
+                      <div class="checkbox-btn-label__inner">Premium</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="tariffs-build__card">
+                <div class="tariffs-build__card-title">Период подписки:</div>
+                <div class="tariffs-build__card-row">
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-white tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-period" value="7 дней"/>
+                      <div class="checkbox-btn-label__inner">7 дней</div>
+                    </label>
+                  </div>
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-white tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-period" value="30 дней" checked="checked"/>
+                      <div class="checkbox-btn-label__inner">30 дней</div>
+                    </label>
+                  </div>
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-white tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-period" value="90 дней"/>
+                      <div class="checkbox-btn-label__inner">90 дней</div>
+                    </label>
+                  </div>
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-light tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-period" value="180 дней"/>
+                      <div class="checkbox-btn-label__inner">180 дней</div>
+                    </label>
+                  </div>
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-white tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-period" value="365 дней"/>
+                      <div class="checkbox-btn-label__inner">365 дней</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="tariffs-build__card">
+                <div class="tariffs-build__card-title">Профит:</div>
+                <div class="tariffs-build__card-row">
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-white tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-profit" value="до 1%" checked="checked"/>
+                      <div class="checkbox-btn-label__inner">до 1%</div>
+                    </label>
+                  </div>
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-white tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-profit" value="до 10%"/>
+                      <div class="checkbox-btn-label__inner">до 10%</div>
+                    </label>
+                  </div>
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-light tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-profit" value="до ∞"/>
+                      <div class="checkbox-btn-label__inner">до ∞</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="tariffs-build__card">
+                <div class="tariffs-build__card-title">Доступ к режимам:</div>
+                <div class="tariffs-build__card-row">
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-white tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-mode" value="Прематч" checked="checked"/>
+                      <div class="checkbox-btn-label__inner">Прематч</div>
+                    </label>
+                  </div>
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-white tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-mode" value="Live"/>
+                      <div class="checkbox-btn-label__inner">Live</div>
+                    </label>
+                  </div>
+                  <div class="tariffs-build__card-row-col">
+                    <label class="checkbox-btn-label checkbox-btn-label--theme-light tariffs-build__card-label">
+                      <input class="checkbox-btn-label__control" type="radio" name="tariffs-build-mode" value="Прематч+Live"/>
+                      <div class="checkbox-btn-label__inner">Прематч+Live</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tariffs-build__appeal">
+              <div class="tariffs-build__appeal-header">
+                <div class="tariffs-build__appeal-header-col tariffs-build__appeal-header-col--info">
+                  <div class="tariffs-build__appeal-header-title">Ваш тариф</div><a class="btn btn--size-st btn--theme-dark tariffs-build__appeal-header-btn" href="#">Перейти</a>
+                </div>
+                <div class="tariffs-build__appeal-header-col tariffs-build__appeal-header-col--description">
+                  <p class="tariffs-build__appeal-header-description">*продление 80 руб.</p>
+                </div>
+                <div class="tariffs-build__appeal-header-col tariffs-build__appeal-header-col--info">
+                  <div class="tariffs-build__appeal-header-title">Private</div>
+                  <div class="tariffs-build__appeal-header-price">100 руб.</div>
+                </div>
+              </div>
+              <ul class="list-benefits tariffs-build__appeal-info">
+                <li>12 видов спорта</li>
+                <li>49 сайтов и 134 клонов в Prematch</li>
+                <li>Профит до 1%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tariffs-faq-section">
+        <div class="container tariffs-faq-section__container">
+          <picture class="tariffs-faq-section__payments"><img src="./images/payments/payments.png" alt="Способы оплаты"/></picture>
+          <div class="tariffs-faq-section__content">
+            <h3>Как купить по цене продления?</h3>
+            <p>Цена действительна для еще действующей подписки, в такой случае Вы можете продлить ее по более низкой цене, а на странице тарифов для этой подписки будет доступна кнопка продления, не кнопка покупки. Количество оставшихся по подписке дней не сгорает, а добавляется к дням, на которые Вы продлеваете подписку.</p>
+            <h3>Автоматические списания</h3>
+            <p>Мы не работаем с автоматическими списаниями, поэтому все покупки необходимо осуществлять вручную. Например после окончания подписки с Вас не будут автоматически списаны средства за ее продление, продлить подписку Вам необходимо самому.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__inner">
+          <div class="footer__col footer__col--logo"><a class="logo logo--accent-dark footer__logo" href="/"><span class="logo__title"><span class="logo__title-text">Work</span><span class="logo__title-text-accent">Bet</span></span><span class="logo__subtitle">ваш гарант доходов на спорте</span></a></div>
+          <div class="footer__col footer__col--nav">
+            <div class="footer__nav-list">
+              <ul class="footer-nav footer__nav-list-item">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Главная</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Вилки</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Особенности</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Тарифы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Акции</a></li>
+              </ul>
+              <ul class="footer-nav footer__nav-list-item">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Информация</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">О нас</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Правила</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Платежи</a></li>
+              </ul>
+              <ul class="footer-nav footer__nav-list-item">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">С чего начать</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Начать выигрывать</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Как сделать ставку</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Как пополнить счет</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Как снять деньги</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Идентификация</a></li>
+              </ul>
+              <ul class="footer-nav footer__nav-list-item">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Поддержка</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Юридические запросы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Финансовые запросы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Налоговые запросы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col--contacts"><a class="btn btn--size-md btn--theme-white-accent footer__contacts-btn" href="#">Написать нам</a>
+            <div class="contacts-media footer__contacts-media">
+              <ul class="contacts-media__list">
+                <li class="contacts-media__item"><a class="contacts-media__link" href="#">
+                    <svg class="icon contacts-media__icon">
+                      <use xlink:href="./images/sprite.svg#signal-social"></use>
+                    </svg></a></li>
+                <li class="contacts-media__item"><a class="contacts-media__link" href="#">
+                    <svg class="icon contacts-media__icon">
+                      <use xlink:href="./images/sprite.svg#vk-social"></use>
+                    </svg></a></li>
+                <li class="contacts-media__item"><a class="contacts-media__link" href="#">
+                    <svg class="icon contacts-media__icon">
+                      <use xlink:href="./images/sprite.svg#telegram-social"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p><a href="#">Политика приватности Пользовательское&nbsp;соглашение</a><br>Workbet не является букмекером, не занимается организацией азартных игр и не пропагандирует их.<br>Информация несет ознакомительный характер.<br>Все права защищены. 18+</p>
+          <p>Wokrbet ©2022</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/select2.full.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>

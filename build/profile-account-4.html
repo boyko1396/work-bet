@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>WorkBet</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+</html>
+<body>
+  <div id="site">
+    <header class="header">
+      <div class="container header__container"><a class="logo logo--accent-white header__logo" href="/"><span class="logo__title"><span class="logo__title-text">Work</span><span class="logo__title-text-accent">Bet</span></span><span class="logo__subtitle">ваш гарант доходов на спорте</span></a>
+        <div class="header__menu">
+          <button class="js-menu-toggle header__menu-btn-close" type="button">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <nav class="header-nav header__nav" role="navigation">
+            <ul class="header-nav__list">
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Главная</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Вилки</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Особенности</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Тарифы</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Акции</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Поддержка</a></li>
+            </ul>
+          </nav>
+          <div class="btn-group header__action">
+            <div class="btn-group__inner"><a class="btn btn--size-md btn--theme-dark btn-group__item" href="#">Вход</a><a class="btn btn--size-md btn--theme-white btn-group__item" href="#">Регистрация</a></div>
+          </div><a class="lg-visible btn btn--size-md btn--theme-white-accent header__action-write" href="#">Написать нам</a>
+        </div>
+        <button class="lg-visible js-menu-toggle header__toggle" type="button"><span class="header__toggle-line"></span><span class="header__toggle-line"></span><span class="header__toggle-line"></span></button>
+      </div>
+    </header>
+    <main class="main" role="main">
+      <section class="profile-layout">
+        <div class="container profile-layout__container">
+          <aside class="profile-aside profile-layout__aside">
+            <div class="profile-aside__header">
+              <div class="profile-aside__header-title">Профиль</div><a class="profile-aside__header-login" href="#">логин</a>
+              <button class="md-visible js-toggle-aside-nav profile-aside__header-btn-toggle" type="button">
+                <svg class="icon">
+                  <use xlink:href="./images/sprite.svg#toggle-aside-nav"></use>
+                </svg>
+              </button>
+            </div>
+            <nav class="profile-aside__nav">
+              <ul class="profile-aside__nav-list">
+                <li class="profile-aside__nav-item"><a class="profile-aside__nav-link" href="profile-account-1.html">Аккаунт</a></li>
+                <li class="profile-aside__nav-item"><a class="profile-aside__nav-link" href="profile-account-2.html">Настройки</a></li>
+                <li class="profile-aside__nav-item"><a class="profile-aside__nav-link" href="profile-account-3.html">Скрытые вилки</a></li>
+                <li class="profile-aside__nav-item"><a class="profile-aside__nav-link is-active" href="profile-account-4.html">Букмекеры</a></li>
+                <li class="profile-aside__nav-item"><a class="profile-aside__nav-link" href="profile-account-5.html">История ставок</a></li>
+                <li class="profile-aside__nav-item"><a class="profile-aside__nav-link" href="profile-account-6.html">Платежи</a></li>
+                <li class="profile-aside__nav-item"><a class="profile-aside__nav-link" href="profile-account-7.html">Партнерская программа</a></li>
+              </ul>
+            </nav>
+          </aside>
+          <div class="profile-main profile-layout__main">
+            <div class="profile-main__account-list">
+              <div class="profile-settings-card profile-main__account-list-card">
+                <div class="profile-settings-card__b-header">
+                  <div class="profile-settings-card__b-header-title">Зеркала</div><a class="profile-settings-card__b-header-settings" href="#">Настройки</a>
+                  <form class="search-form profile-settings-card__b-header-search" action="#">
+                    <input class="input-el search-form__input" type="search" name="q" required="required" placeholder="Найти букмекера"/>
+                    <button class="search-form__btn" type="submit">
+                      <svg class="icon">
+                        <use xlink:href="./images/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+                <div class="bookmaker-table profile-settings-card__b-block">
+                  <div class="bookmaker-table__row bookmaker-table__row--header">
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3">
+                      <div class="bookmaker-table__title">Букмекер</div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3">
+                      <div class="bookmaker-table__title">Домен</div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3">
+                      <div class="bookmaker-table__title">Возможности</div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3">
+                      <div class="bookmaker-table__title">Язык платформы</div>
+                    </div>
+                  </div>
+                  <div class="bookmaker-table__row bookmaker-table__row--body">
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Букмекер">
+                      <div class="bookmaker-table__name">1xbet</div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Домен">
+                      <label class="checkbox-label bookmaker-table__domain">
+                        <input class="checkbox-label__control" type="checkbox" name="domain" value="Ввести свой домен"/><span class="checkbox-label__inner"><span class="checkbox-label__inner-icon"></span><span class="checkbox-label__inner-text">Ввести свой домен</span></span>
+                      </label>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Возможности">
+                      <div class="bookmaker-table__capabilities-list">
+                        <div class="capabilities-item capabilities-item--type-1 bookmaker-table__capabilities-list-item"></div>
+                        <div class="capabilities-item capabilities-item--type-2 bookmaker-table__capabilities-list-item"></div>
+                        <div class="capabilities-item capabilities-item--type-3 bookmaker-table__capabilities-list-item"></div>
+                      </div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Язык платформы">
+                      <select class="js-select-white-init bookmaker-table__language" name="filter">
+                        <option value="Выбрать язык">Выбрать язык</option>
+                        <option value="Русский">Русский</option>
+                        <option value="Английский">Английский</option>
+                        <option value="Немецкий">Немецкий</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="bookmaker-table__row bookmaker-table__row--body">
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Букмекер">
+                      <div class="bookmaker-table__name">Фонбет</div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Домен">
+                      <label class="checkbox-label bookmaker-table__domain">
+                        <input class="checkbox-label__control" type="checkbox" name="domain" value="Ввести свой домен"/><span class="checkbox-label__inner"><span class="checkbox-label__inner-icon"></span><span class="checkbox-label__inner-text">Ввести свой домен</span></span>
+                      </label>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Возможности">
+                      <div class="bookmaker-table__capabilities-list">
+                        <div class="capabilities-item capabilities-item--type-1 bookmaker-table__capabilities-list-item"></div>
+                        <div class="capabilities-item capabilities-item--type-3 bookmaker-table__capabilities-list-item"></div>
+                      </div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Язык платформы">
+                      <select class="js-select-white-init bookmaker-table__language" name="filter">
+                        <option value="Выбрать язык">Выбрать язык</option>
+                        <option value="Русский">Русский</option>
+                        <option value="Английский">Английский</option>
+                        <option value="Немецкий">Немецкий</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="bookmaker-table__row bookmaker-table__row--body">
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Букмекер">
+                      <div class="bookmaker-table__name">BetCity</div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Домен">
+                      <label class="checkbox-label bookmaker-table__domain">
+                        <input class="checkbox-label__control" type="checkbox" name="domain" value="Ввести свой домен"/><span class="checkbox-label__inner"><span class="checkbox-label__inner-icon"></span><span class="checkbox-label__inner-text">Ввести свой домен</span></span>
+                      </label>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Возможности">
+                      <div class="bookmaker-table__capabilities-list">
+                        <div class="capabilities-item capabilities-item--type-1 bookmaker-table__capabilities-list-item"></div>
+                      </div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Язык платформы">
+                      <select class="js-select-white-init bookmaker-table__language" name="filter">
+                        <option value="Выбрать язык">Выбрать язык</option>
+                        <option value="Русский">Русский</option>
+                        <option value="Английский">Английский</option>
+                        <option value="Немецкий">Немецкий</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="bookmaker-table__row bookmaker-table__row--body">
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Букмекер">
+                      <div class="bookmaker-table__name">1xbet</div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Домен">
+                      <label class="checkbox-label bookmaker-table__domain">
+                        <input class="checkbox-label__control" type="checkbox" name="domain" value="Ввести свой домен"/><span class="checkbox-label__inner"><span class="checkbox-label__inner-icon"></span><span class="checkbox-label__inner-text">Ввести свой домен</span></span>
+                      </label>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Возможности">
+                      <div class="bookmaker-table__capabilities-list">
+                        <div class="capabilities-item capabilities-item--type-1 bookmaker-table__capabilities-list-item"></div>
+                        <div class="capabilities-item capabilities-item--type-2 bookmaker-table__capabilities-list-item"></div>
+                        <div class="capabilities-item capabilities-item--type-3 bookmaker-table__capabilities-list-item"></div>
+                      </div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Язык платформы">
+                      <select class="js-select-white-init bookmaker-table__language" name="filter">
+                        <option value="Выбрать язык">Выбрать язык</option>
+                        <option value="Русский">Русский</option>
+                        <option value="Английский">Английский</option>
+                        <option value="Немецкий">Немецкий</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="bookmaker-table__row bookmaker-table__row--body">
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Букмекер">
+                      <div class="bookmaker-table__name">1xbet</div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Домен">
+                      <label class="checkbox-label bookmaker-table__domain">
+                        <input class="checkbox-label__control" type="checkbox" name="domain" value="Ввести свой домен"/><span class="checkbox-label__inner"><span class="checkbox-label__inner-icon"></span><span class="checkbox-label__inner-text">Ввести свой домен</span></span>
+                      </label>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Возможности">
+                      <div class="bookmaker-table__capabilities-list">
+                        <div class="capabilities-item capabilities-item--type-1 bookmaker-table__capabilities-list-item"></div>
+                        <div class="capabilities-item capabilities-item--type-2 bookmaker-table__capabilities-list-item"></div>
+                        <div class="capabilities-item capabilities-item--type-3 bookmaker-table__capabilities-list-item"></div>
+                      </div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Язык платформы">
+                      <select class="js-select-white-init bookmaker-table__language" name="filter">
+                        <option value="Выбрать язык">Выбрать язык</option>
+                        <option value="Русский">Русский</option>
+                        <option value="Английский">Английский</option>
+                        <option value="Немецкий">Немецкий</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="bookmaker-table__row bookmaker-table__row--body">
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Букмекер">
+                      <div class="bookmaker-table__name">1xbet</div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Домен">
+                      <label class="checkbox-label bookmaker-table__domain">
+                        <input class="checkbox-label__control" type="checkbox" name="domain" value="Ввести свой домен"/><span class="checkbox-label__inner"><span class="checkbox-label__inner-icon"></span><span class="checkbox-label__inner-text">Ввести свой домен</span></span>
+                      </label>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Возможности">
+                      <div class="bookmaker-table__capabilities-list">
+                        <div class="capabilities-item capabilities-item--type-1 bookmaker-table__capabilities-list-item"></div>
+                        <div class="capabilities-item capabilities-item--type-2 bookmaker-table__capabilities-list-item"></div>
+                        <div class="capabilities-item capabilities-item--type-3 bookmaker-table__capabilities-list-item"></div>
+                      </div>
+                    </div>
+                    <div class="bookmaker-table__col bookmaker-table__col--size-3" data-table-title-mobile="Язык платформы">
+                      <select class="js-select-white-init bookmaker-table__language" name="filter">
+                        <option value="Выбрать язык">Выбрать язык</option>
+                        <option value="Русский">Русский</option>
+                        <option value="Английский">Английский</option>
+                        <option value="Немецкий">Немецкий</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__inner">
+          <div class="footer__col footer__col--logo"><a class="logo logo--accent-dark footer__logo" href="/"><span class="logo__title"><span class="logo__title-text">Work</span><span class="logo__title-text-accent">Bet</span></span><span class="logo__subtitle">ваш гарант доходов на спорте</span></a></div>
+          <div class="footer__col footer__col--nav">
+            <div class="footer__nav-list">
+              <ul class="footer-nav footer__nav-list-item">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Главная</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Вилки</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Особенности</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Тарифы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Акции</a></li>
+              </ul>
+              <ul class="footer-nav footer__nav-list-item">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Информация</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">О нас</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Правила</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Платежи</a></li>
+              </ul>
+              <ul class="footer-nav footer__nav-list-item">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">С чего начать</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Начать выигрывать</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Как сделать ставку</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Как пополнить счет</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Как снять деньги</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Идентификация</a></li>
+              </ul>
+              <ul class="footer-nav footer__nav-list-item">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Поддержка</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Юридические запросы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Финансовые запросы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Налоговые запросы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col--contacts"><a class="btn btn--size-md btn--theme-white-accent footer__contacts-btn" href="#">Написать нам</a>
+            <div class="contacts-media footer__contacts-media">
+              <ul class="contacts-media__list">
+                <li class="contacts-media__item"><a class="contacts-media__link" href="#">
+                    <svg class="icon contacts-media__icon">
+                      <use xlink:href="./images/sprite.svg#signal-social"></use>
+                    </svg></a></li>
+                <li class="contacts-media__item"><a class="contacts-media__link" href="#">
+                    <svg class="icon contacts-media__icon">
+                      <use xlink:href="./images/sprite.svg#vk-social"></use>
+                    </svg></a></li>
+                <li class="contacts-media__item"><a class="contacts-media__link" href="#">
+                    <svg class="icon contacts-media__icon">
+                      <use xlink:href="./images/sprite.svg#telegram-social"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p><a href="#">Политика приватности Пользовательское&nbsp;соглашение</a><br>Workbet не является букмекером, не занимается организацией азартных игр и не пропагандирует их.<br>Информация несет ознакомительный характер.<br>Все права защищены. 18+</p>
+          <p>Wokrbet ©2022</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/select2.full.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>

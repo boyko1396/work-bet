@@ -1,34 +1,35 @@
 .event-card {
     background: $color-white-1;
-    padding: var(--gap);
+    padding: 7px;
     font-size: var(--fs-default);
     border-radius: 7px;
+    @media (max-width: $lg) {
+        border-radius: 0;
+    }
     &__table {
         width: 100%;
         font-weight: normal;
         text-align: left;
         border-collapse: collapse;
-    }
-    thead {
-    }
-    tbody {
-    }
-    tfoot {
-        border-top: 1px solid rgba($color-black-1, .16);
-    }
-    &:not(.is-active) tfoot {
-        display: none;
-    }
-    &__table-tr {
-    }
-    th {
-    }
-    td {
+        &-tr {
+            display: flex;
+        }
+        &-header {
+            display: flex;
+            align-items: center;
+        }
+        &-body {
+        }
+        &-footer {
+            display: flex;
+            align-items: center;
+        }
     }
     &__cell {
         margin: 0;
-        padding: var(--gap);
+        padding: 8px;
         font-weight: normal;
+        flex: 1;
         vertical-align: top;
         &--1,
         &--3,
@@ -37,40 +38,45 @@
             white-space: nowrap;
         }
         &--1 {
-            width: 155px;
-            max-width: 155px;
+            max-width: 12.5%;
+            flex-basis: 12.5%;
         }
         &--2 {
+            max-width: 41%;
+            flex-basis: 41%;
         }
         &--3 {
-            width: 180px;
-            max-width: 180px;
+            max-width: 19%;
+            flex-basis: 19%;
         }
         &--4 {
-            width: 155px;
-            max-width: 155px;
-        }
-        &--5,
-        &--6 {
-            padding-right: 7px;
-            padding-left: 7px;
         }
         &--5 {
-            width: 70px;
-            max-width: 70px;
+            max-width: 60%;
+            flex-basis: 60%;
+            @media (max-width: $lg) {
+                max-width: initial;
+                flex-grow: 1;
+            }
         }
         &--6 {
-            width: 81px;
-            max-width: 81px;
+        }
+        &--7 {
+            max-width: 15%;
+            flex-basis: 15%;
         }
     }
-    & thead &__cell {
+    &.is-active &__cell--4,
+    &:not(.is-active) &__cell--6 {
+        display: none !important;
+    }
+    &__table-header &__cell {
         padding-bottom: 4px;
     }
-    & tfoot &__cell {
+    &__table-footer &__cell {
         padding-top: 4px;
     }
-    & tfoot tr:first-child &__cell {
+    &__table-footer &__table-tr:first-child &__cell {
         padding-top: 24px;
         padding-bottom: 20px;
     }
@@ -78,6 +84,10 @@
         margin: 0;
         font-weight: 600;
         font-size: var(--fs-6);
+        @media (max-width: $lg) {
+            font-weight: normal;
+            font-size: 14px;
+        }
     }
     &__title-wrapper {
         display: flex;
@@ -87,6 +97,10 @@
     &__description {
         margin: 0;
         font-size: var(--fs-7);
+        @media (max-width: $lg) {
+            font-size: 14px;
+            color: $color-black-1;
+        }
     }
     &__game-info {
         margin: 0;
@@ -96,9 +110,6 @@
         font-weight: normal;
         font-size: var(--fs-default);
     }
-    & tfoot tr:not(:nth-last-child(2)) &__info {
-        margin-bottom: 8px;
-    }
     &__bo-name {
         margin: 0;
     }
@@ -106,10 +117,11 @@
         margin: 0 0 8px;
     }
     &__bo-bet {
-        margin: 0;
+        margin: 0 0 8px;
     }
     &__bo-profit {
-        margin: 0;
+        max-width: 150px;
+        margin: 0 30px 0 0;
     }
     &__time {
         margin: 0;
@@ -117,11 +129,29 @@
     &__btn-list {
         margin: -5px;
         display: flex;
-    }
-    &__btn-list-item {
-        margin: 5px;
-    }
-    &__btn-calculator {
+        justify-content: space-between;
+        @media (max-width: $lg) {
+            justify-content: flex-end;
+        }
+        &-item {
+            margin: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
+            flex-grow: 1;
+            @media (max-width: $lg) {
+                min-height: 0 !important;
+                margin: 0 !important;
+                padding: 5px !important;
+                font-size: 0 !important;
+                flex-grow: initial !important;
+                border: none;
+            }
+            .btn__icon-wrapper {
+                @media (max-width: $lg) {
+                    margin: 0 !important;
+                }
+            }
+        }
     }
     &__bet-game {
         display: flex;
@@ -140,5 +170,26 @@
     &__coefficient-input {
     }
     &__currency {
+    }
+    &__data-list {
+        margin: -5px;
+        display: flex;
+        align-items: center;
+        font-size: var(--fs-7);
+        &-col {
+            max-width: 25%;
+            min-height: 1px;
+            padding: 5px;
+            flex: 0 0 25%;
+        }
+        &-coef {
+        }
+    }
+    .select2-container {
+        width: 100% !important;
+        .select2-selection--single {
+            padding-right: 7px;
+            padding-left: 7px;
+        }
     }
 }

@@ -74,36 +74,56 @@
           </div>
           <div class="feed-section__list">
             <article class="event-card feed-section__list-card">
-              <table class="event-card__table">
-                <thead>
-                  <tr class="event-card__table-tr">
-                    <th class="event-card__cell event-card__cell--1">
-                      <p class="event-card__title">66.27%</p>
-                    </th>
-                    <th class="event-card__cell event-card__cell--2">
-                      <div class="event-card__title-wrapper">
-                        <p class="event-card__title">Дартс</p>
-                        <p class="color-gray event-card__description">Начало в 19:25</p>
-                        <p class="color-gray event-card__description">02.07.22</p>
+              <div class="event-card__table">
+                <div class="event-card__table-header">
+                  <div class="lg-visible event-card__cell event-card__cell--7">
+                    <p class="event-card__title">66.27%</p>
+                  </div>
+                  <div class="event-card__cell event-card__cell--1">
+                    <p class="lg-none event-card__title">66.27%</p>
+                    <p class="lg-visible event-card__title">Букмекер</p>
+                  </div>
+                  <div class="lg-none event-card__cell event-card__cell--2">
+                    <div class="event-card__title-wrapper">
+                      <p class="event-card__title">Дартс</p>
+                      <p class="color-gray event-card__description">Начало в 19:25</p>
+                      <p class="color-gray event-card__description">02.07.22</p>
+                    </div>
+                  </div>
+                  <div class="event-card__cell event-card__cell--3">
+                    <div class="event-card__title-wrapper">
+                      <p class="event-card__title">Ставка</p>
+                    </div>
+                  </div>
+                  <div class="event-card__cell event-card__cell--4">
+                    <p class="event-card__title">Коэффициент</p>
+                  </div>
+                  <div class="event-card__cell event-card__cell--6">
+                    <div class="event-card__data-list">
+                      <div class="event-card__data-list-col">
+                        <p class="event-card__title">Коэф.</p>
                       </div>
-                    </th>
-                    <th class="event-card__cell event-card__cell--3">
-                      <div class="event-card__title-wrapper">
-                        <p class="event-card__title">Ставка</p>
-                        <p class="color-gray event-card__game-info">(Game/Points)</p>
+                      <div class="event-card__data-list-col">
+                        <p class="event-card__title">Сумма</p>
                       </div>
-                    </th>
-                    <th class="event-card__cell event-card__cell--4" colspan="4">
-                      <p class="event-card__title">Коэф.</p>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
+                      <div class="event-card__data-list-col">
+                        <p class="event-card__title">Валюта</p>
+                      </div>
+                      <div class="event-card__data-list-col">
+                        <p class="event-card__title">Доход</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="event-card__table-body">
+                  <div class="event-card__table-tr">
+                    <div class="lg-visible event-card__cell event-card__cell--7">
+                      <p class="event-card__title">football</p>
+                    </div>
+                    <div class="event-card__cell event-card__cell--1">
                       <div class="input-el input-el--is-readonly event-card__bo-name">1xbet</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
+                    </div>
+                    <div class="lg-none event-card__cell event-card__cell--2">
                       <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Noppert D - Rodriguez R.-J</a>
                         <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
                           <svg class="icon btn-copy__icon">
@@ -112,21 +132,43 @@
                         </button>
                       </div>
                       <h3 class="color-gray event-card__info">Darts. Darts. European Tour. First round. 11 legs</h3>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
+                    </div>
+                    <div class="event-card__cell event-card__cell--3">
                       <div class="input-el input-el--is-readonly event-card__bo-bet">1</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--4" colspan="4">
+                      <div class="color-gray event-card__info">(Game/Points)</div>
+                    </div>
+                    <div class="event-card__cell event-card__cell--4">
                       <div class="input-profit input-profit--plus event-card__bo-profit">
                         <input class="input-el input-profit__el" type="text" name="" value="3.45"/>
                       </div>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
+                    </div>
+                    <div class="event-card__cell event-card__cell--6">
+                      <div class="event-card__data-list">
+                        <div class="event-card__data-list-col">
+                          <div class="input-profit input-profit--plus event-card__data-list-coef">
+                            <input class="input-el input-profit__el" type="text" name="" value="3.45"/>
+                          </div>
+                        </div>
+                        <div class="event-card__data-list-col">
+                          <input class="input-el event-card__coefficient-input" type="text" name="" value="56.00"/>
+                        </div>
+                        <div class="event-card__data-list-col">
+                          <select class="js-select-light-init event-card__currency">
+                            <option value="USD">USD</option>
+                            <option value="RUB">RUB</option>
+                            <option value="UAH">UAH</option>
+                          </select>
+                        </div>
+                        <div class="event-card__data-list-col">12.0</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card__table-tr">
+                    <div class="lg-visible event-card__cell event-card__cell--7"></div>
+                    <div class="event-card__cell event-card__cell--1">
                       <div class="input-el input-el--is-readonly event-card__bo-name">Mostbet</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
+                    </div>
+                    <div class="lg-none event-card__cell event-card__cell--2">
                       <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Danny Noppert - Rowby-John Rodriguez</a>
                         <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
                           <svg class="icon btn-copy__icon">
@@ -135,582 +177,83 @@
                         </button>
                       </div>
                       <h3 class="color-gray event-card__info">Darts. Darts. European Tour. Germany. Matches of 11 legs</h3>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
+                    </div>
+                    <div class="event-card__cell event-card__cell--3">
                       <div class="input-el input-el--is-readonly event-card__bo-bet">X2</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--4" colspan="4">
+                      <div class="color-gray event-card__info">(Game/Points)</div>
+                    </div>
+                    <div class="event-card__cell event-card__cell--4">
                       <div class="input-profit input-profit--minus event-card__bo-profit">
                         <input class="input-el input-profit__el" type="text" name="" value="1.43"/>
                       </div>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="cell-vertical-middle event-card__cell event-card__cell--1">
-                      <div class="event-card__time">1мин 22 сек</div>
-                    </td>
-                    <td class="cell-vertical-middle event-card__cell event-card__cell--2" colspan="2">
-                      <div class="event-card__btn-list"><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#">Открыть событие в БК</a><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#">Сообщить об ошибке</a><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#">Удалить</a></div>
-                    </td>
-                    <td class="cell-vertical-middle event-card__cell event-card__cell--4" colspan="4">
-                      <button class="js-event-btn-calculator btn btn--size-md btn--theme-simple event-card__btn-calculator" type="true"><span class="btn__icon-wrapper btn__icon-wrapper--ltr">
+                    </div>
+                    <div class="event-card__cell event-card__cell--6">
+                      <div class="event-card__data-list">
+                        <div class="event-card__data-list-col">
+                          <div class="input-profit input-profit--minus event-card__data-list-coef">
+                            <input class="input-el input-profit__el" type="text" name="" value="1.43"/>
+                          </div>
+                        </div>
+                        <div class="event-card__data-list-col">
+                          <input class="input-el event-card__coefficient-input" type="text" name="" value="56.00"/>
+                        </div>
+                        <div class="event-card__data-list-col">
+                          <select class="js-select-light-init event-card__currency">
+                            <option value="USD">USD</option>
+                            <option value="RUB">RUB</option>
+                            <option value="UAH">UAH</option>
+                          </select>
+                        </div>
+                        <div class="event-card__data-list-col">12.2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="event-card__table-footer">
+                  <div class="lg-visible event-card__cell event-card__cell--7">
+                    <p class="event-card__title">1:22 сек</p>
+                  </div>
+                  <div class="event-card__cell event-card__cell--1">
+                    <div class="lg-none event-card__time">1мин 22 сек</div><a class="lg-visible event-card__all-variant" href="#">Все вилки</a>
+                  </div>
+                  <div class="event-card__cell event-card__cell--5">
+                    <div class="event-card__btn-list"><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#"><span class="lg-visible btn__icon-wrapper btn__icon-wrapper--ltr">
+                          <svg class="icon btn__icon btn__icon--normal">
+                            <use xlink:href="./images/sprite.svg#arrow-login"></use>
+                          </svg></span>Открыть событие в БК</a><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#"><span class="lg-visible btn__icon-wrapper btn__icon-wrapper--ltr">
+                          <svg class="icon btn__icon btn__icon--normal">
+                            <use xlink:href="./images/sprite.svg#alert-warning"></use>
+                          </svg></span>Сообщить об ошибке</a><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#"><span class="lg-visible btn__icon-wrapper btn__icon-wrapper--ltr">
+                          <svg class="icon btn__icon btn__icon--normal">
+                            <use xlink:href="./images/sprite.svg#remove"></use>
+                          </svg></span>Удалить</a>
+                      <button class="js-event-btn-calculator btn btn--size-md btn--theme-simple event-card__btn-list-item" type="button"><span class="btn__icon-wrapper btn__icon-wrapper--ltr">
                           <svg class="icon btn__icon btn__icon--normal">
                             <use xlink:href="./images/sprite.svg#calculator"></use>
                           </svg>
                           <svg class="icon btn__icon btn__icon--active">
                             <use xlink:href="./images/sprite.svg#close"></use>
                           </svg></span>Калькулятор</button>
-                    </td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--2" colspan="7">
-                      <div class="event-card__bet-game"><img class="event-card__bet-game-icon" src="./images/sprite/calculator.svg" alt="Рочдейл Роверс (23) vs Митчелтон (23) , 1 тайм 19:05"/>Рочдейл Роверс (23) vs Митчелтон (23) , 1 тайм 19:05</div>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
-                      <p class="event-card__title">66.27%</p>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
-                      <div class="event-card__title-wrapper">
-                        <p class="event-card__title">Дартс</p>
-                        <p class="color-gray event-card__description">Начало в 19:25</p>
-                        <p class="color-gray event-card__description">02.07.22</p>
+                    </div>
+                  </div>
+                  <div class="event-card__cell event-card__cell--6">
+                    <div class="event-card__data-list">
+                      <div class="event-card__data-list-col"></div>
+                      <div class="event-card__data-list-col">
+                        <input class="input-el event-card__coefficient-input" type="text" name="" value="56.00"/>
                       </div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
-                      <div class="event-card__title-wrapper">
-                        <p class="event-card__title">Ставка</p>
-                        <p class="color-gray event-card__game-info">(Game/Points)</p>
+                      <div class="event-card__data-list-col">
+                        <select class="js-select-light-init event-card__currency">
+                          <option value="USD">USD</option>
+                          <option value="USD">USD</option>
+                          <option value="USD">USD</option>
+                        </select>
                       </div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <p class="event-card__title">Коэф.</p>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <p class="event-card__title">Сумма</p>
-                    </td>
-                    <td class="event-card__cell event-card__cell--6">
-                      <p class="event-card__title">Валюта</p>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <p class="event-card__title">Доход</p>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
-                      <div class="input-el input-el--is-readonly event-card__bo-name">1xbet</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
-                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Noppert D - Rodriguez R.-J</a>
-                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
-                          <svg class="icon btn-copy__icon">
-                            <use xlink:href="./images/sprite.svg#copy"></use>
-                          </svg>
-                        </button>
-                      </div>
-                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. First round. 11 legs</h3>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
-                      <div class="input-el input-el--is-readonly event-card__bo-bet">1</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="2.0"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="56.00"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--6">
-                      <select class="js-select-light-init event-card__currency">
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                      </select>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="12.0"/>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
-                      <div class="input-el input-el--is-readonly event-card__bo-name">Mostbet</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
-                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Danny Noppert - Rowby-John Rodriguez</a>
-                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
-                          <svg class="icon btn-copy__icon">
-                            <use xlink:href="./images/sprite.svg#copy"></use>
-                          </svg>
-                        </button>
-                      </div>
-                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. Germany. Matches of 11 legs</h3>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
-                      <div class="input-el input-el--is-readonly event-card__bo-bet">1</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="2.55"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="44.00"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--6">
-                      <select class="js-select-light-init event-card__currency">
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                      </select>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="12.24"/>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1"></td>
-                    <td class="event-card__cell event-card__cell--2"></td>
-                    <td class="event-card__cell event-card__cell--3"></td>
-                    <td class="event-card__cell event-card__cell--5"></td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="100"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--6">
-                      <select class="js-select-light-init event-card__currency">
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                      </select>
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
-            </article>
-            <article class="event-card feed-section__list-card">
-              <table class="event-card__table">
-                <thead>
-                  <tr class="event-card__table-tr">
-                    <th class="event-card__cell event-card__cell--1">
-                      <p class="event-card__title">66.27%</p>
-                    </th>
-                    <th class="event-card__cell event-card__cell--2">
-                      <div class="event-card__title-wrapper">
-                        <p class="event-card__title">Дартс</p>
-                        <p class="color-gray event-card__description">Начало в 19:25</p>
-                        <p class="color-gray event-card__description">02.07.22</p>
-                      </div>
-                    </th>
-                    <th class="event-card__cell event-card__cell--3">
-                      <div class="event-card__title-wrapper">
-                        <p class="event-card__title">Ставка</p>
-                        <p class="color-gray event-card__game-info">(Game/Points)</p>
-                      </div>
-                    </th>
-                    <th class="event-card__cell event-card__cell--4" colspan="4">
-                      <p class="event-card__title">Коэф.</p>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
-                      <div class="input-el input-el--is-readonly event-card__bo-name">1xbet</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
-                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Noppert D - Rodriguez R.-J</a>
-                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
-                          <svg class="icon btn-copy__icon">
-                            <use xlink:href="./images/sprite.svg#copy"></use>
-                          </svg>
-                        </button>
-                      </div>
-                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. First round. 11 legs</h3>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
-                      <div class="input-el input-el--is-readonly event-card__bo-bet">1</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--4" colspan="4">
-                      <div class="input-profit input-profit--plus event-card__bo-profit">
-                        <input class="input-el input-profit__el" type="text" name="" value="3.45"/>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
-                      <div class="input-el input-el--is-readonly event-card__bo-name">Mostbet</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
-                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Danny Noppert - Rowby-John Rodriguez</a>
-                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
-                          <svg class="icon btn-copy__icon">
-                            <use xlink:href="./images/sprite.svg#copy"></use>
-                          </svg>
-                        </button>
-                      </div>
-                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. Germany. Matches of 11 legs</h3>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
-                      <div class="input-el input-el--is-readonly event-card__bo-bet">X2</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--4" colspan="4">
-                      <div class="input-profit input-profit--minus event-card__bo-profit">
-                        <input class="input-el input-profit__el" type="text" name="" value="1.43"/>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="cell-vertical-middle event-card__cell event-card__cell--1">
-                      <div class="event-card__time">1мин 22 сек</div>
-                    </td>
-                    <td class="cell-vertical-middle event-card__cell event-card__cell--2" colspan="2">
-                      <div class="event-card__btn-list"><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#">Открыть событие в БК</a><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#">Сообщить об ошибке</a><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#">Удалить</a></div>
-                    </td>
-                    <td class="cell-vertical-middle event-card__cell event-card__cell--4" colspan="4">
-                      <button class="js-event-btn-calculator btn btn--size-md btn--theme-simple event-card__btn-calculator" type="true"><span class="btn__icon-wrapper btn__icon-wrapper--ltr">
-                          <svg class="icon btn__icon btn__icon--normal">
-                            <use xlink:href="./images/sprite.svg#calculator"></use>
-                          </svg>
-                          <svg class="icon btn__icon btn__icon--active">
-                            <use xlink:href="./images/sprite.svg#close"></use>
-                          </svg></span>Калькулятор</button>
-                    </td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--2" colspan="7">
-                      <div class="event-card__bet-game"><img class="event-card__bet-game-icon" src="./images/sprite/calculator.svg" alt="Рочдейл Роверс (23) vs Митчелтон (23) , 1 тайм 19:05"/>Рочдейл Роверс (23) vs Митчелтон (23) , 1 тайм 19:05</div>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
-                      <p class="event-card__title">66.27%</p>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
-                      <div class="event-card__title-wrapper">
-                        <p class="event-card__title">Дартс</p>
-                        <p class="color-gray event-card__description">Начало в 19:25</p>
-                        <p class="color-gray event-card__description">02.07.22</p>
-                      </div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
-                      <div class="event-card__title-wrapper">
-                        <p class="event-card__title">Ставка</p>
-                        <p class="color-gray event-card__game-info">(Game/Points)</p>
-                      </div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <p class="event-card__title">Коэф.</p>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <p class="event-card__title">Сумма</p>
-                    </td>
-                    <td class="event-card__cell event-card__cell--6">
-                      <p class="event-card__title">Валюта</p>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <p class="event-card__title">Доход</p>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
-                      <div class="input-el input-el--is-readonly event-card__bo-name">1xbet</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
-                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Noppert D - Rodriguez R.-J</a>
-                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
-                          <svg class="icon btn-copy__icon">
-                            <use xlink:href="./images/sprite.svg#copy"></use>
-                          </svg>
-                        </button>
-                      </div>
-                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. First round. 11 legs</h3>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
-                      <div class="input-el input-el--is-readonly event-card__bo-bet">1</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="2.0"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="56.00"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--6">
-                      <select class="js-select-light-init event-card__currency">
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                      </select>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="12.0"/>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
-                      <div class="input-el input-el--is-readonly event-card__bo-name">Mostbet</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
-                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Danny Noppert - Rowby-John Rodriguez</a>
-                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
-                          <svg class="icon btn-copy__icon">
-                            <use xlink:href="./images/sprite.svg#copy"></use>
-                          </svg>
-                        </button>
-                      </div>
-                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. Germany. Matches of 11 legs</h3>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
-                      <div class="input-el input-el--is-readonly event-card__bo-bet">1</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="2.55"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="44.00"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--6">
-                      <select class="js-select-light-init event-card__currency">
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                      </select>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="12.24"/>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1"></td>
-                    <td class="event-card__cell event-card__cell--2"></td>
-                    <td class="event-card__cell event-card__cell--3"></td>
-                    <td class="event-card__cell event-card__cell--5"></td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="100"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--6">
-                      <select class="js-select-light-init event-card__currency">
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                      </select>
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
-            </article>
-            <article class="event-card feed-section__list-card">
-              <table class="event-card__table">
-                <thead>
-                  <tr class="event-card__table-tr">
-                    <th class="event-card__cell event-card__cell--1">
-                      <p class="event-card__title">66.27%</p>
-                    </th>
-                    <th class="event-card__cell event-card__cell--2">
-                      <div class="event-card__title-wrapper">
-                        <p class="event-card__title">Дартс</p>
-                        <p class="color-gray event-card__description">Начало в 19:25</p>
-                        <p class="color-gray event-card__description">02.07.22</p>
-                      </div>
-                    </th>
-                    <th class="event-card__cell event-card__cell--3">
-                      <div class="event-card__title-wrapper">
-                        <p class="event-card__title">Ставка</p>
-                        <p class="color-gray event-card__game-info">(Game/Points)</p>
-                      </div>
-                    </th>
-                    <th class="event-card__cell event-card__cell--4" colspan="4">
-                      <p class="event-card__title">Коэф.</p>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
-                      <div class="input-el input-el--is-readonly event-card__bo-name">1xbet</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
-                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Noppert D - Rodriguez R.-J</a>
-                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
-                          <svg class="icon btn-copy__icon">
-                            <use xlink:href="./images/sprite.svg#copy"></use>
-                          </svg>
-                        </button>
-                      </div>
-                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. First round. 11 legs</h3>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
-                      <div class="input-el input-el--is-readonly event-card__bo-bet">1</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--4" colspan="4">
-                      <div class="input-profit input-profit--plus event-card__bo-profit">
-                        <input class="input-el input-profit__el" type="text" name="" value="3.45"/>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
-                      <div class="input-el input-el--is-readonly event-card__bo-name">Mostbet</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
-                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Danny Noppert - Rowby-John Rodriguez</a>
-                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
-                          <svg class="icon btn-copy__icon">
-                            <use xlink:href="./images/sprite.svg#copy"></use>
-                          </svg>
-                        </button>
-                      </div>
-                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. Germany. Matches of 11 legs</h3>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
-                      <div class="input-el input-el--is-readonly event-card__bo-bet">X2</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--4" colspan="4">
-                      <div class="input-profit input-profit--minus event-card__bo-profit">
-                        <input class="input-el input-profit__el" type="text" name="" value="1.43"/>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="cell-vertical-middle event-card__cell event-card__cell--1">
-                      <div class="event-card__time">1мин 22 сек</div>
-                    </td>
-                    <td class="cell-vertical-middle event-card__cell event-card__cell--2" colspan="2">
-                      <div class="event-card__btn-list"><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#">Открыть событие в БК</a><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#">Сообщить об ошибке</a><a class="btn btn--size-md btn--theme-simple event-card__btn-list-item" href="#">Удалить</a></div>
-                    </td>
-                    <td class="cell-vertical-middle event-card__cell event-card__cell--4" colspan="4">
-                      <button class="js-event-btn-calculator btn btn--size-md btn--theme-simple event-card__btn-calculator" type="true"><span class="btn__icon-wrapper btn__icon-wrapper--ltr">
-                          <svg class="icon btn__icon btn__icon--normal">
-                            <use xlink:href="./images/sprite.svg#calculator"></use>
-                          </svg>
-                          <svg class="icon btn__icon btn__icon--active">
-                            <use xlink:href="./images/sprite.svg#close"></use>
-                          </svg></span>Калькулятор</button>
-                    </td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--2" colspan="7">
-                      <div class="event-card__bet-game"><img class="event-card__bet-game-icon" src="./images/sprite/calculator.svg" alt="Рочдейл Роверс (23) vs Митчелтон (23) , 1 тайм 19:05"/>Рочдейл Роверс (23) vs Митчелтон (23) , 1 тайм 19:05</div>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
-                      <p class="event-card__title">66.27%</p>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
-                      <div class="event-card__title-wrapper">
-                        <p class="event-card__title">Дартс</p>
-                        <p class="color-gray event-card__description">Начало в 19:25</p>
-                        <p class="color-gray event-card__description">02.07.22</p>
-                      </div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
-                      <div class="event-card__title-wrapper">
-                        <p class="event-card__title">Ставка</p>
-                        <p class="color-gray event-card__game-info">(Game/Points)</p>
-                      </div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <p class="event-card__title">Коэф.</p>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <p class="event-card__title">Сумма</p>
-                    </td>
-                    <td class="event-card__cell event-card__cell--6">
-                      <p class="event-card__title">Валюта</p>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <p class="event-card__title">Доход</p>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
-                      <div class="input-el input-el--is-readonly event-card__bo-name">1xbet</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
-                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Noppert D - Rodriguez R.-J</a>
-                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
-                          <svg class="icon btn-copy__icon">
-                            <use xlink:href="./images/sprite.svg#copy"></use>
-                          </svg>
-                        </button>
-                      </div>
-                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. First round. 11 legs</h3>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
-                      <div class="input-el input-el--is-readonly event-card__bo-bet">1</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="2.0"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="56.00"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--6">
-                      <select class="js-select-light-init event-card__currency">
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                      </select>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="12.0"/>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1">
-                      <div class="input-el input-el--is-readonly event-card__bo-name">Mostbet</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--2">
-                      <div class="input-el input-el--is-readonly event-card__name"><a class="input-el__link" href="#">Danny Noppert - Rowby-John Rodriguez</a>
-                        <button class="js-event-copy-name btn-copy input-el__btn-copy" type="button">
-                          <svg class="icon btn-copy__icon">
-                            <use xlink:href="./images/sprite.svg#copy"></use>
-                          </svg>
-                        </button>
-                      </div>
-                      <h3 class="color-gray event-card__info">Darts. Darts. European Tour. Germany. Matches of 11 legs</h3>
-                    </td>
-                    <td class="event-card__cell event-card__cell--3">
-                      <div class="input-el input-el--is-readonly event-card__bo-bet">1</div>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="2.55"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="44.00"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--6">
-                      <select class="js-select-light-init event-card__currency">
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                      </select>
-                    </td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="12.24"/>
-                    </td>
-                  </tr>
-                  <tr class="event-card__table-tr">
-                    <td class="event-card__cell event-card__cell--1"></td>
-                    <td class="event-card__cell event-card__cell--2"></td>
-                    <td class="event-card__cell event-card__cell--3"></td>
-                    <td class="event-card__cell event-card__cell--5"></td>
-                    <td class="event-card__cell event-card__cell--5">
-                      <input class="input-el event-card__coefficient-input" type="text" name="" value="100"/>
-                    </td>
-                    <td class="event-card__cell event-card__cell--6">
-                      <select class="js-select-light-init event-card__currency">
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                        <option value="USD">USD</option>
-                      </select>
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
+                      <div class="event-card__data-list-col"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </article>
           </div>
           <div class="pagination feed-section__pagination">
@@ -799,4 +342,5 @@
 </body>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/select2.full.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>

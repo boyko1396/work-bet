@@ -9,15 +9,22 @@
 @import "blocks/input";
 @import "blocks/select2.min";
 @import "blocks/select";
+@import "blocks/slick.min";
+@import "blocks/slick";
 @import "blocks/pagination";
 @import "blocks/event-card";
 @import "blocks/contacts-media";
+@import "blocks/search-form";
+@import "blocks/bookmaker-table";
 
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/main";
 @import "layouts/intro";
 @import "layouts/feed-section";
-
+@import "layouts/profile";
+@import "layouts/tariffs-section";
+@import "layouts/tariffs-build-section";
+@import "layouts/tariffs-faq-section";
 
 @import "default/media";

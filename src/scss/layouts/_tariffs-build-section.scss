@@ -1,0 +1,106 @@
+.tariffs-build {
+    @media (max-width: $md) {
+    }
+    &__list {
+        margin: 0 0 60px;
+    }
+    &__card {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        &-title {
+            margin: 0 0 15px;
+            font-weight: 600;
+            font-size: var(--fs-6);
+            text-align: center;
+        }
+        &-row {
+            margin: 0 -8px;
+            display: flex;
+            justify-content: center;
+            &-col {
+                padding: 0 8px;
+            }
+        }
+        &-label {
+            min-width: 162px;
+        }
+    }
+    &__appeal {
+        max-width: 654px;
+        margin: 0 auto;
+        padding: 20px 20px 40px;
+        font-size: var(--fs-7);
+        border: 1px solid $color-black-2;
+        border-radius: 7px;
+        &-header {
+            margin: 0 0 45px;
+            display: flex;
+            justify-content: space-between;
+            &-col {
+                &--info {
+                    flex-shrink: 0;
+                }
+                &--description {
+                    margin: 0;
+                    align-self: flex-end;
+                }
+            }
+            &-title {
+                margin: 0 0 15px;
+                font-weight: bold;
+                font-size: var(--fs-3);
+            }
+            &-btn {
+            }
+            &-description {
+                min-height: 54px;
+                margin: 0;
+                padding: 0 5px;
+                display: flex;
+                align-items: center;
+                color: rgba($color-black-1, .5);
+            }
+            &-price {
+                background: $color-white-1;
+                width: fit-content;
+                max-width: 100%;
+                min-width: 150px;
+                min-height: 54px;
+                padding: 8px 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: normal;
+                font-size: var(--fs-5);
+                text-align: center;
+                border-radius: 7px;
+                white-space: nowrap;
+            }
+        }
+        &-info {
+            margin: 0 -10px;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.tariffs-build-section {
+    background: $color-gray-2;
+    padding: 40px 0 80px;
+    &__container {
+    }
+    &__title {
+        margin: 0 0 45px;
+        font-weight: bold;
+        font-size: var(--fs-2);
+        text-align: center;
+    }
+    &__block {
+    }
+}

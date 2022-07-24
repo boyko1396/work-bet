@@ -27,11 +27,26 @@
             box-shadow: 0 0 12px 1px rgba($color-black-1, .17);
         }
     }
+    &--size-md {
+        min-height: 54px;
+        padding: 12px;
+    }
     &--is-readonly {
         background: $color-gray-2;
         border-color: transparent;
         pointer-events: none;
         user-select: none;
+    }
+    &--theme-white {
+        border-color: transparent;
+        &:hover {
+            @media (min-width: $lg-mf) {
+                box-shadow: 0 0 12px 1px rgba($color-black-1, .17);
+            }
+        }
+    }
+    &::placeholder {
+        color: rgba($color-black-1, .5);
     }
     &__link {
         margin-right: 20px;

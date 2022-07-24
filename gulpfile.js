@@ -1,12 +1,11 @@
 // modules
-
-const gulp = require("gulp");
-const plumber = require("gulp-plumber");
+const gulp = require('gulp');
+const plumber = require('gulp-plumber');
 const pug = require('gulp-pug');
-const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass")(require('sass'));
+const sourcemap = require('gulp-sourcemaps');
+const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
-const sync = require("browser-sync").create();
+const sync = require('browser-sync').create();
 
 const autoprefixerList = [
 	'Chrome >= 45',
@@ -19,7 +18,7 @@ const autoprefixerList = [
 	'Opera >= 30'
 ];
 
-// Страницы ПАГ
+// pug to html
 const buildTemplate = () => {
 	return gulp.src(['src/*.pug'])
 		.pipe(sourcemap.init())
@@ -32,7 +31,6 @@ const buildTemplate = () => {
 }
 exports.buildTemplate = buildTemplate;
 
-// Папка Load 
 const buildLoad = () => {
 	return gulp.src(['src/load/*.pug'])
 		.pipe(sourcemap.init())
@@ -45,7 +43,7 @@ const buildLoad = () => {
 }
 exports.buildLoad = buildLoad;
 
-// Sass/Scss
+// scss to css
 const createCss = () => {
 	return gulp.src("src/scss/**/*.+(sass|scss)")
 		.pipe(plumber(function (err) {
@@ -55,7 +53,7 @@ const createCss = () => {
 		}))
 		.pipe(sourcemap.init())
 		.pipe(sass().on('error', sass.logError))
-		.pipe(autoprefixer({ // добавим префиксы
+		.pipe(autoprefixer({
 				overrideBrowserslist: autoprefixerList,
 				cascade: false,
 				grid: true
@@ -66,7 +64,7 @@ const createCss = () => {
 }
 exports.createCss = createCss;
 
-// Перенос css файлов (по типу normalize.css)
+// css libs
 const moveCss = () => {
 	return gulp.src("src/scss/libs/*.css")
 		.pipe(sourcemap.init())
@@ -74,7 +72,7 @@ const moveCss = () => {
 }
 exports.moveCss = moveCss;
 
-// Картинки
+// img
 const images = () => {
 	return gulp.src("src/images/**")
 		.pipe(sourcemap.init())
@@ -83,7 +81,7 @@ const images = () => {
 }
 exports.images = images;
 
-// Скрипты 
+// JS 
 const scripts = () => {
 	return gulp.src("src/js/*")
 		.pipe(sourcemap.init())
@@ -92,7 +90,7 @@ const scripts = () => {
 }
 exports.scripts = scripts;
 
-//Шрифты  
+// fonts  
 const fonts = () => {
 	return gulp.src("src/fonts/*")
 		.pipe(sourcemap.init())
@@ -101,7 +99,7 @@ const fonts = () => {
 }
 exports.fonts = fonts;
 
-// Server
+// server
 const server = (done) => {
 	sync.init({
 		server: {
@@ -115,11 +113,10 @@ const server = (done) => {
 }
 exports.server = server;
 
-// Watcher
+// watcher
 const watch = () => {
-
 	gulp.watch('src/js/*', gulp.series("scripts"));
-	gulp.watch('src/images/*', gulp.series("images"));
+	gulp.watch('src/images/**', gulp.series("images"));
 	gulp.watch('src/fonts/*', gulp.series("fonts"));
 	gulp.watch('src/scss/**/*.+(sass|scss)', gulp.series("createCss"));
 	gulp.watch('src/scss/libs/*.css)', gulp.series("moveCss"));

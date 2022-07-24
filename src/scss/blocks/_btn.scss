@@ -24,6 +24,13 @@
         padding: 11px 22px;
         font-size: var(--fs-7);
     }
+    &--size-st {
+        min-height: 54px;
+        padding: 14px 40px;
+        font-size: var(--fs-6);
+        @media (max-width: $sm) {
+        }
+    }
     &--size-lg {
         min-height: 76px;
         padding: 16px 62px;

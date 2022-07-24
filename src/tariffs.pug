@@ -1,0 +1,154 @@
+include includes/head.pug
+
+body
+
+  #site
+    include includes/header.pug
+
+    main(role="main").main
+      section.tariffs-section
+        .container.tariffs-section__container
+          h1.tariffs-section__title Базовые тарифы
+          .tariffs-slider.tariffs-section__slider
+            .js-tariffs-slider-init.tariffs-slider__inner
+              .tariffs-slider__slide
+                .tariffs-card.tariffs-slider__card
+                  .tariffs-card__inner
+                    .tariffs-card__title Free
+                    .tariffs-card__price-wrap
+                      .services-price.tariffs-card__price Бесплатно
+                    .tariffs-card__prolongation Продления нет
+                    ul.list-benefits.tariffs-card__list-benefits
+                      li 12 видов спорта
+                      li 49 сайтов и 134 клонов в Prematch
+                    .tariffs-card__footer
+                      p.tariffs-card__description *продление доступно только при наличии действующей подписки
+                      a(href="#").btn.btn--size-st.btn--theme-dark.tariffs-card__btn Перейти
+              .tariffs-slider__slide
+                .tariffs-card.tariffs-slider__card
+                  .tariffs-card__inner
+                    .tariffs-card__title Прематч
+                    .tariffs-card__price-wrap
+                      .services-price.tariffs-card__price 150 руб.
+                    .tariffs-card__prolongation Продление 200 руб.
+                    ul.list-benefits.tariffs-card__list-benefits
+                      li 12 видов спорта
+                      li 49 сайтов и 134 клонов в Prematch
+                      li Профит от 1 до 10%
+                    .tariffs-card__footer
+                      p.tariffs-card__description *продление доступно только при наличии действующей подписки
+                      a(href="#").btn.btn--size-st.btn--theme-dark.tariffs-card__btn Перейти
+              .tariffs-slider__slide
+                .tariffs-card.tariffs-slider__card
+                  .tariffs-card__inner
+                    .tariffs-card__title Прематч+LIVE
+                    .tariffs-card__price-wrap
+                      .services-price.tariffs-card__price 150 руб.
+                    .tariffs-card__prolongation Продление 200 руб.
+                    ul.list-benefits.tariffs-card__list-benefits
+                      li 12 видов спорта
+                      li 49 сайтов и 134 клонов в Prematch
+                      li Профит от 1 до 10%
+                    .tariffs-card__footer
+                      p.tariffs-card__description *продление доступно только при наличии действующей подписки
+                      a(href="#").btn.btn--size-st.btn--theme-dark.tariffs-card__btn Перейти
+      section.tariffs-build-section
+        .container.tariffs-build-section__container
+          h2.tariffs-build-section__title Индивидуальный конструктор по тарифам "Private" и "Premium"
+          .tariffs-build.tariffs-build-section__block
+            .tariffs-build__list
+              .tariffs-build__card
+                .tariffs-build__card-title Версия:
+                .tariffs-build__card-row
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-white.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-version", value="Lite", checked).checkbox-btn-label__control
+                      .checkbox-btn-label__inner Lite
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-white.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-version", value="Pro").checkbox-btn-label__control
+                      .checkbox-btn-label__inner Pro
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-white.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-version", value="Premium").checkbox-btn-label__control
+                      .checkbox-btn-label__inner Premium
+              .tariffs-build__card
+                .tariffs-build__card-title Период подписки:
+                .tariffs-build__card-row
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-white.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-period", value="7 дней").checkbox-btn-label__control
+                      .checkbox-btn-label__inner 7 дней
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-white.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-period", value="30 дней", checked).checkbox-btn-label__control
+                      .checkbox-btn-label__inner 30 дней
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-white.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-period", value="90 дней").checkbox-btn-label__control
+                      .checkbox-btn-label__inner 90 дней
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-light.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-period", value="180 дней").checkbox-btn-label__control
+                      .checkbox-btn-label__inner 180 дней
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-white.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-period", value="365 дней").checkbox-btn-label__control
+                      .checkbox-btn-label__inner 365 дней
+              .tariffs-build__card
+                .tariffs-build__card-title Профит:
+                .tariffs-build__card-row
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-white.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-profit", value="до 1%", checked).checkbox-btn-label__control
+                      .checkbox-btn-label__inner до 1%
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-white.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-profit", value="до 10%").checkbox-btn-label__control
+                      .checkbox-btn-label__inner до 10%
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-light.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-profit", value="до ∞").checkbox-btn-label__control
+                      .checkbox-btn-label__inner до ∞
+              .tariffs-build__card
+                .tariffs-build__card-title Доступ к режимам:
+                .tariffs-build__card-row
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-white.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-mode", value="Прематч", checked).checkbox-btn-label__control
+                      .checkbox-btn-label__inner Прематч
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-white.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-mode", value="Live").checkbox-btn-label__control
+                      .checkbox-btn-label__inner Live
+                  .tariffs-build__card-row-col
+                    label.checkbox-btn-label.checkbox-btn-label--theme-light.tariffs-build__card-label
+                      input(type="radio", name="tariffs-build-mode", value="Прематч+Live").checkbox-btn-label__control
+                      .checkbox-btn-label__inner Прематч+Live
+            .tariffs-build__appeal
+              .tariffs-build__appeal-header
+                .tariffs-build__appeal-header-col.tariffs-build__appeal-header-col--info
+                  .tariffs-build__appeal-header-title Ваш тариф
+                  a(href="#").btn.btn--size-st.btn--theme-dark.tariffs-build__appeal-header-btn Перейти
+                .tariffs-build__appeal-header-col.tariffs-build__appeal-header-col--description
+                  p.tariffs-build__appeal-header-description *продление 80 руб.
+                .tariffs-build__appeal-header-col.tariffs-build__appeal-header-col--info
+                  .tariffs-build__appeal-header-title Private
+                  .tariffs-build__appeal-header-price 100 руб.
+              ul.list-benefits.tariffs-build__appeal-info
+                li 12 видов спорта
+                li 49 сайтов и 134 клонов в Prematch
+                li Профит до 1%
+      section.tariffs-faq-section
+        .container.tariffs-faq-section__container
+          picture.tariffs-faq-section__payments
+            img(src="./images/payments/payments.png", alt="Способы оплаты")
+          .tariffs-faq-section__content
+            h3 Как купить по цене продления?
+            p Цена действительна для еще действующей подписки, в такой случае Вы можете продлить ее по более низкой цене, а на странице тарифов для этой подписки будет доступна кнопка продления, не кнопка покупки. Количество оставшихся по подписке дней не сгорает, а добавляется к дням, на которые Вы продлеваете подписку.
+            h3 Автоматические списания
+            p Мы не работаем с автоматическими списаниями, поэтому все покупки необходимо осуществлять вручную. Например после окончания подписки с Вас не будут автоматически списаны средства за ее продление, продлить подписку Вам необходимо самому.
+
+    include includes/footer.pug
+
+include includes/foot.pug

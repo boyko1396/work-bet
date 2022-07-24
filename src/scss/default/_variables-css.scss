@@ -10,4 +10,9 @@
 
     --gap: 15px;
     --gap-m: calc(-1 * var(--gap));
+    @media (max-width: $lg) {
+        --fs-2: 25px;
+        --fs-3: 20px;
+        --fs-5: 14px;
+    }
 }

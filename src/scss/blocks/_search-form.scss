@@ -1,0 +1,43 @@
+.search-form {
+    position: relative;
+    &__input {
+        width: 100%;
+        padding-right: 40px;
+        padding-left: 16px;
+        &::-ms-clear,
+        &::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration {
+            display: none;
+        }
+    }
+    &__btn {
+        width: 42px;
+        height: 100%;
+        font-size: 22px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0 7px 7px 0;
+        cursor: pointer;
+        @extend .btn-reset;
+        &:after {
+            width: 0;
+            height: 100%;
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .icon {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}

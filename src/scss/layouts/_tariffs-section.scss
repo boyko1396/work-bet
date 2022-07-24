@@ -1,0 +1,52 @@
+.tariffs-slider {
+    .slick-track {
+        display: flex;
+    }
+    .slick-slide {
+        height: initial;
+    }
+    .slick-dots {
+        margin-top: 30px;
+    }
+    &__inner {
+        margin: 0 -15px;
+        @media (min-width: $md-mf) {
+            display: flex;
+        }
+    }
+    &__slide {
+        padding: 0 15px;
+        @media (min-width: $md-mf) {
+            max-width: 33.33333%;
+            flex: 0 0 33.33333%;
+        }
+        @media (max-width: $md) {
+            padding-right: 7px;
+            padding-left: 7px;
+        }
+    }
+    &__card {
+        height: 100%;
+    }
+}
+
+.tariffs-section {
+    padding: 55px 0;
+    @media (max-width: $lg) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    &__container {
+    }
+    &__title {
+        margin: 0 0 30px;
+        font-weight: bold;
+        font-size: var(--fs-2);
+        text-align: center;
+        @media (max-width: $lg) {
+            margin-bottom: 20px;
+        }
+    }
+    &__slider {
+    }
+}

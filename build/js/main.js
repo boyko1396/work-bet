@@ -3,6 +3,8 @@ $(document).ready(function() {
     eventCalculatorToggle();
     select2Init1();
     select2Init2();
+    select2Init3();
+    tariffsSliderInit();
 
     // header toggle menu
     function headerBtnToggle() {
@@ -40,6 +42,44 @@ $(document).ready(function() {
                 minimumResultsForSearch: Infinity,
                 width: 'auto',
                 theme: 'select2-container--light'
+            });
+        }
+    }
+
+    function select2Init3() {
+        if ($('.js-select-white-init')[0]){
+            $('.js-select-white-init').select2({
+                minimumResultsForSearch: Infinity,
+                width: 'auto',
+                theme: 'select2-container--white'
+            });
+        }
+    }
+
+    function tariffsSliderInit() {
+        if ($('.js-tariffs-slider-init')[0]){
+            $(window).on('load resize orientationchange', function() {
+                $('.js-tariffs-slider-init').each(function(){
+                    var $carousel = $(this);
+                    if ($(window).width() > 991) {
+                        if ($carousel.hasClass('slick-initialized')) {
+                            $carousel.slick('unslick');
+                        }
+                    }
+                    else{
+                        if (!$carousel.hasClass('slick-initialized')) {
+                            $carousel.slick({
+                                speed: 240,
+                                arrows: false,
+                                dots: true,
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                centerMode: true,
+                                centerPadding: '30px'
+                            });
+                        }
+                    }
+                });
             });
         }
     }

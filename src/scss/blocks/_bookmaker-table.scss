@@ -1,0 +1,46 @@
+.bookmaker-table {
+    font-size: var(--fs-7);
+    &__row {
+        margin: 0 -10px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        &--header {
+            margin-bottom: 20px;
+        }
+        &--body {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &__col {
+        max-width: 100%;
+        padding: 0 10px;
+        flex: 1;
+        &--size-3 {
+            max-width: 25%;
+            flex-basis: 25%;
+        }
+    }
+    &__title {
+        font-weight: bold;
+    }
+    &__name {
+    }
+    &__domain {
+    }
+    &__capabilities-list {
+        min-width: 100px;
+        margin: 0 -4px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__capabilities-list-item {
+        margin: 0 4px;
+    }
+    &__language {
+        min-width: 168px;
+    }
+}
