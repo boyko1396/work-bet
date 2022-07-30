@@ -5,12 +5,34 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        position: relative;
+        @media (max-width: $lg) {
+            margin-right: -5px;
+            margin-left: -5px;
+            align-items: initial;
+        }
+        &:after {
+            @media (max-width: $lg) {
+                content: '';
+                border-bottom: 1px solid rgba($color-black-1, .5);
+                position: absolute;
+                right: 5px;
+                bottom: 0;
+                left: 5px;
+            }
+        }
         &--header {
             margin-bottom: 20px;
+            @media (max-width: $lg) {
+                display: none;
+            }
         }
         &--body {
             &:not(:last-child) {
                 margin-bottom: 10px;
+                @media (max-width: $lg) {
+                    margin-bottom: 25px;
+                }
             }
         }
     }
@@ -18,9 +40,35 @@
         max-width: 100%;
         padding: 0 10px;
         flex: 1;
+        @media (max-width: $lg) {
+            margin-bottom: 25px;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        &:before {
+            @media (max-width: $lg) {
+                min-height: 1em;
+                margin: 0 0 10px;
+                content: attr(data-table-title-mobile);
+                display: block;
+                font-weight: bold;
+            }
+        }
         &--size-3 {
             max-width: 25%;
             flex-basis: 25%;
+            &:nth-child(odd) {
+                @media (max-width: $lg) {
+                    max-width: 40%;
+                    flex-basis: 40%;
+                }
+            }
+            &:nth-child(even) {
+                @media (max-width: $lg) {
+                    max-width: 60%;
+                    flex-basis: 60%;
+                }
+            }
         }
     }
     &__title {
@@ -36,6 +84,9 @@
         display: inline-flex;
         justify-content: center;
         align-items: center;
+        @media (max-width: $lg) {
+            min-width: initial;
+        }
     }
     &__capabilities-list-item {
         margin: 0 4px;

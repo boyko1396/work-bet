@@ -1,5 +1,6 @@
 $(document).ready(function() {
     headerBtnToggle();
+    asideBtnToggle();
     eventCalculatorToggle();
     select2Init1();
     select2Init2();
@@ -11,6 +12,14 @@ $(document).ready(function() {
         $('.js-menu-toggle').click(function() {
             $('body').toggleClass('is-menu-opened');
             $('.header__menu').toggleClass('is-show');
+        });
+    }
+
+    // aside nav toggle
+    function asideBtnToggle() {
+        $('.js-toggle-aside-nav').click(function() {
+            $(this).toggleClass('is-active');
+            $('.profile-aside__nav-item:not(.is-active)').slideToggle(200);
         });
     }
 
@@ -50,7 +59,7 @@ $(document).ready(function() {
         if ($('.js-select-white-init')[0]){
             $('.js-select-white-init').select2({
                 minimumResultsForSearch: Infinity,
-                width: 'auto',
+                width: '100%',
                 theme: 'select2-container--white'
             });
         }

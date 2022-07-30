@@ -2,10 +2,25 @@
     background: $color-gray-2;
     padding: 30px;
     border-radius: 7px;
+    @media (max-width: $sm) {
+        margin-right: 0;
+        margin-bottom: 15px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
     &__header {
         margin: 0 0 30px;
         display: flex;
         align-items: center;
+        @media (max-width: $sm) {
+            flex-direction: column;
+            align-items: center;
+        }
+        & > :last-child {
+            @media (max-width: $sm) {
+                margin-bottom: 0 !important;
+            }
+        }
     }
     &__title,
     &__b-header-title,
@@ -18,15 +33,26 @@
     }
     &__title {
         margin: 0 15px 0 0;
+        @media (max-width: $sm) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
     }
     &__b-header {
         margin: 0 0 45px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: $sm) {
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
         &-title {
             margin: 0 15px 0 0;
             flex-shrink: 0;
+            @media (max-width: $sm) {
+                margin-bottom: 15px;
+            }
         }
         &-settings {
             margin: 0 auto 0 0;
@@ -37,6 +63,9 @@
             @extend .area-click;
             @media (min-width: $lg-mf) {
                 box-shadow: inset 0 -1px 0 transparent;
+            }
+            @media (max-width: $sm) {
+                margin-bottom: 15px;
             }
             &:hover {
                 text-decoration: none;
@@ -50,30 +79,76 @@
             max-width: 400px;
             margin-left: 15px;
             flex-grow: 1;
+            @media (max-width: $sm) {
+                max-width: 100%;
+                margin-top: 15px;
+                margin-left: 0;
+                flex: 0 0 100%;
+            }
         }
     }
     &__b-block {
     }
     &__btn {
-        margin-left: auto;
-        flex-shrink: 0;
+        @media (min-width: $sm-mf) {
+            margin-left: auto;
+            flex-shrink: 0;
+        }
+        @media (max-width: $xs) {
+            width: 100%;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
     }
     &__subscription {
-        background: #fff;
         width: 100%;
         margin: 0 0 30px;
+        display: block;
         font-size: var(--fs-7);
         text-align: left;
-        border-collapse: collapse;
-        border-radius: 7px;
+        @media (min-width: $md-mf) {
+            background: #fff;
+            display: table;
+            border-collapse: collapse;
+            border-radius: 7px;
+        }
+        @media (max-width: $md) {
+            display: block;
+        }
+        thead {
+            @media (max-width: $md) {
+                display: none;
+            }
+        }
+        tbody {
+            @media (max-width: $md) {
+                display: block;
+            }
+        }
+        tr {
+            @media (max-width: $md) {
+                display: block;
+            }
+        }
         th,
         td {
-            padding: 8px 18px;
+            @media (min-width: $md-mf) {
+                padding: 8px 18px;
+            }
+            @media (max-width: $md) {
+                padding: 15px 0;
+                display: block;
+                border-bottom: 1px solid rgba($color-black-1, .5);
+            }
             &:first-child {
-                padding-left: 30px;
+                @media (min-width: $md-mf) {
+                    padding-left: 30px;
+                }
             }
             &:last-child {
-                padding-right: 30px;
+                @media (min-width: $md-mf) {
+                    padding-right: 30px;
+                }
             }
         }
         th {
@@ -81,13 +156,28 @@
             font-size: var(--fs-6);
         }
         td {
+            @media (max-width: $md) {
+            }
+            &:before {
+                @media (max-width: $md) {
+                    margin: 0 0 5px;
+                    content: attr(data-table-title-mobile);
+                    display: block;
+                    font-weight: bold;
+                    font-size: 113.3333333%;
+                }
+            }
         }
         thead tr:first-child th {
-            padding-top: 20px;
+            @media (min-width: $md-mf) {
+                padding-top: 20px;
+            }
         }
         tbody:last-child tr:last-child td,
         tfoot tr:last-child td {
-            padding-bottom: 20px;
+            @media (min-width: $md-mf) {
+                padding-bottom: 20px;
+            }
         }
     }
     &__subscription-stop {
@@ -104,17 +194,33 @@
     }
     &__subscription-description {
         margin: 0;
+        font-size: var(--fs-7);
         line-height: 1.4;
     }
     &__promocode {
         max-width: 730px;
         display: flex;
+        @media (max-width: $sm) {
+            flex-direction: column;
+        }
         &-input {
             margin-right: 14px;
             flex-grow: 1;
+            @media (max-width: $sm) {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
         }
         &-btn {
             flex-shrink: 0;
+            @media (max-width: $sm) {
+                margin: 0 auto;
+            }
+            @media (max-width: $xs) {
+                width: 100%;
+                padding-right: 5px;
+                padding-left: 5px;
+            }
         }
     }
     &__edit {
@@ -128,6 +234,10 @@
             &--w-50 {
                 max-width: calc(50% - 7px);
                 flex-basis: calc(50% - 7px);
+                @media (max-width: $sm) {
+                    max-width: 100%;
+                    flex-basis: 100%;
+                }
             }
             &--w-100 {
                 width: 100%;
@@ -135,6 +245,14 @@
             }
         }
         &-btn {
+            @media (max-width: $sm) {
+                margin: 0 auto;
+            }
+            @media (max-width: $xs) {
+                width: 100%;
+                padding-right: 5px;
+                padding-left: 5px;
+            }
         }
     }
 }
@@ -142,14 +260,26 @@
 .profile-aside {
     &__header {
         margin: 0 0 40px;
-        display: flex;
-        align-items: flex-end;
         line-height: 1;
+        @media (max-width: $sm) {
+            background: $color-gray-2;
+            margin-bottom: 30px;
+            padding: 16px 80px 16px 20px;
+            border-radius: 7px;
+            position: relative;
+        }
+        @media (min-width: $md-mf) {
+            display: flex;
+            align-items: flex-end;
+        }
         &-title {
-            margin: 5px .9em 0 0;
+            margin: 0 0 9px;
             font-weight: bold;
             font-size: var(--fs-2);
             line-height: inherit;
+            @media (min-width: $md-mf) {
+                margin: 5px .9em 0 0;
+            }
         }
         &-login {
             margin-bottom: .14em;
@@ -157,9 +287,13 @@
             color: rgba($color-black-1, .5);
             transition: all .34s;
             transition-property: color, box-shadow;
-            @extend .area-click;
+            vertical-align: top;
+            @extend .area-click, .text-overflow;
             @media (min-width: $lg-mf) {
                 box-shadow: inset 0 -1px 0 transparent;
+            }
+            @media (max-width: $sm) {
+                font-size: 18px;
             }
             &:hover {
                 text-decoration: none;
@@ -170,11 +304,23 @@
             }
         }
         &-btn-toggle {
-            display: block;
-            font-size: 44px;
             @extend .btn-reset, .area-click;
-            .icon {
+            @media (max-width: $sm) {
+                background: $color-black-2;
+                margin-top: -29px;
+                position: absolute;
+                top: 50%;
+                right: 14px;
+                padding: 7px;
                 display: block;
+                font-size: 44px;
+                color: $color-white-1;
+                border-radius: 7px;
+            }
+            .icon {
+                @media (max-width: $sm) {
+                    display: block;
+                }
             }
         }
     }
@@ -184,12 +330,32 @@
             margin: 0;
             padding: 0;
             list-style-type: none;
+            @media (max-width: $sm) {
+                display: flex;
+                flex-direction: column;
+            }
         }
         &-item {
             margin: 0;
             padding: 0;
             &:not(:last-child) {
                 margin-bottom: 32px;
+                @media (max-width: $sm) {
+                    margin-bottom: 15px;
+                }
+            }
+            &.is-active  {
+                font-weight: bold;
+                @media (max-width: $sm) {
+                    font-size: var(--fs-2);
+                    order: -1;
+                }
+            }
+            &:not(.is-active) {
+                @media (max-width: $sm) {
+                    display: none;
+                    font-size: 18px;
+                }
             }
         }
         &-link {
@@ -197,8 +363,8 @@
             transition: all .4s;
             transition-property: color;
             @extend .area-click;
-            &.is-active {
-                font-weight: bold;
+            @media (max-width: $sm) {
+                text-align: center;
             }
             &:hover {
                 text-decoration: none;
@@ -219,16 +385,28 @@
 
 .profile-layout {
     padding: 68px 0;
+    @media (max-width: $sm) {
+        padding: 15px 0 45px;
+    }
     &__container {
-        display: flex;
-        align-items: flex-start;
+        @media (min-width: $sm-mf) {
+            display: flex;
+            align-items: flex-start;
+        }
     }
     &__aside {
-        width: 22.2%;
-        margin-right: 20px;
-        flex: 0 0 22.2%;
+        @media (min-width: $sm-mf) {
+            width: 22.2%;
+            margin-right: 20px;
+            flex: 0 0 22.2%;
+        }
+        @media (max-width: $sm) {
+            margin-bottom: 30px;
+        }
     }
     &__main {
-        flex-grow: 1;
+        @media (min-width: $sm-mf) {
+            flex-grow: 1;
+        }
     }
 }

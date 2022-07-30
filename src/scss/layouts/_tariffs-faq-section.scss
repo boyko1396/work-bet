@@ -1,5 +1,8 @@
 .tariffs-faq-section {
     padding: 80px 0;
+    @media (max-width: $sm) {
+        padding: 40px 0;
+    }
     &__container {
     }
     &__payments {
@@ -8,6 +11,9 @@
         margin: 0 auto 60px;
         font-size: 0;
         text-align: center;
+        @media (max-width: $sm) {
+            margin-bottom: 30px;
+        }
         img {
             max-width: 100%;
             height: auto;

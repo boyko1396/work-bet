@@ -71,6 +71,7 @@ svg,
 
 .text-overflow {
     max-width: 100%;
+    display: inline-block;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -263,9 +264,11 @@ td.cell-vertical-middle {
     display: block;
     cursor: pointer;
     position: relative;
-    &--theme-white {
-    }
-    &--theme-light {
+    &--theme {
+        &-white {
+        }
+        &-light {
+        }
     }
     &__control {
         position: absolute;

@@ -29,6 +29,8 @@
         padding: 14px 40px;
         font-size: var(--fs-6);
         @media (max-width: $sm) {
+            padding-right: 28px;
+            padding-left: 28px;
         }
     }
     &--size-lg {

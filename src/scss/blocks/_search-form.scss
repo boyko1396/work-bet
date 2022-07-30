@@ -28,6 +28,15 @@
         border-radius: 0 7px 7px 0;
         cursor: pointer;
         @extend .btn-reset;
+        @media (min-width: $lg-mf) {
+            transition: all .34s;
+            transition-property: opacity;
+        }
+        &:hover {
+            @media (min-width: $lg-mf) {
+                opacity: .5;
+            }
+        }
         &:after {
             width: 0;
             height: 100%;

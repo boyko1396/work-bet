@@ -10,15 +10,15 @@ body
         .container.profile-layout__container
           aside.profile-aside.profile-layout__aside
             .profile-aside__header
-              .profile-aside__header-title Профиль
+              h1.profile-aside__header-title Профиль
               a(href="#").profile-aside__header-login логин
-              button(type="button").md-visible.js-toggle-aside-nav.profile-aside__header-btn-toggle
+              button(type="button").sm-visible.js-toggle-aside-nav.profile-aside__header-btn-toggle
                 svg.icon
                   use(xlink:href="./images/sprite.svg#toggle-aside-nav")
             nav.profile-aside__nav
               ul.profile-aside__nav-list
-                li.profile-aside__nav-item
-                  a(href="profile-account-1.html").profile-aside__nav-link.is-active Аккаунт
+                li.profile-aside__nav-item.is-active
+                  a(href="profile-account-1.html").profile-aside__nav-link Аккаунт
                 li.profile-aside__nav-item
                   a(href="profile-account-2.html").profile-aside__nav-link Настройки
                 li.profile-aside__nav-item

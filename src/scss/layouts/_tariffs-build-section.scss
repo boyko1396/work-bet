@@ -3,6 +3,12 @@
     }
     &__list {
         margin: 0 0 60px;
+        @media (max-width: $md) {
+            margin-bottom: 40px;
+        }
+        @media (max-width: $sm) {
+            margin-bottom: 20px;
+        }
     }
     &__card {
         &:not(:last-child) {
@@ -18,12 +24,30 @@
             margin: 0 -8px;
             display: flex;
             justify-content: center;
+            @media (max-width: $sm) {
+                margin-right: -4px;
+                margin-left: -4px;
+            }
             &-col {
                 padding: 0 8px;
+                @media (max-width: $xs) {
+                    padding-right: 4px;
+                    padding-left: 4px;
+                    flex-grow: 1;
+                }
             }
         }
         &-label {
             min-width: 162px;
+            @media (max-width: $md) {
+                min-width: initial;
+            }
+            .checkbox-btn-label__inner {
+                @media (max-width: $xs) {
+                    padding-right: 8px;
+                    padding-left: 8px;
+                }
+            }
         }
     }
     &__appeal {
@@ -33,33 +57,71 @@
         font-size: var(--fs-7);
         border: 1px solid $color-black-2;
         border-radius: 7px;
+        @media (max-width: $sm) {
+            padding-bottom: 20px;
+        }
         &-header {
             margin: 0 0 45px;
             display: flex;
             justify-content: space-between;
+            @media (max-width: $sm) {
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+            }
             &-col {
                 &--info {
                     flex-shrink: 0;
+                    @media (max-width: $sm) {
+                        max-width: 48%;
+                        flex: 0 0 48%;
+                        order: -1;
+                    }
                 }
                 &--description {
                     margin: 0;
                     align-self: flex-end;
+                    @media (max-width: $sm) {
+                        max-width: 100%;
+                        flex: 0 0 100%;
+                    }
                 }
             }
             &-title {
                 margin: 0 0 15px;
                 font-weight: bold;
                 font-size: var(--fs-3);
+                @media (max-width: $sm) {
+                    font-size: 18px;
+                }
+                @media (max-width: $xs) {
+                    margin-bottom: 10px;
+                    font-size: 17px;
+                }
             }
             &-btn {
+                @media (max-width: $sm) {
+                    width: 100%;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    font-size: 15px;
+                }
+                @media (max-width: $xs) {
+                    min-height: 42px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-size: 14px;
+                }
             }
             &-description {
-                min-height: 54px;
-                margin: 0;
-                padding: 0 5px;
-                display: flex;
-                align-items: center;
+                margin: 20px 0 0;
                 color: rgba($color-black-1, .5);
+                @media (min-width: $sm-mf) {
+                    min-height: 54px;
+                    margin: 0;
+                    padding: 0 5px;
+                    display: flex;
+                    align-items: center;
+                }
             }
             &-price {
                 background: $color-white-1;
@@ -76,12 +138,28 @@
                 text-align: center;
                 border-radius: 7px;
                 white-space: nowrap;
+                @media (max-width: $sm) {
+                    width: 100%;
+                    min-width: initial;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    font-size: 15px;
+                }
+                @media (max-width: $xs) {
+                    min-height: 42px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-size: 14px;
+                }
             }
         }
         &-info {
             margin: 0 -10px;
             display: flex;
             flex-wrap: wrap;
+            @media (max-width: $sm) {
+                margin-bottom: -15px;
+            }
             li {
                 margin-right: 10px;
                 margin-left: 10px;
